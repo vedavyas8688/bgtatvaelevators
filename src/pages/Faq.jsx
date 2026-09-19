@@ -41,47 +41,47 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <main className="min-h-screen bg-[#f8f7f1] text-[#172e3b]">
+    <main className="min-h-screen bg-[#F8F7F1] text-[#2D4F6E]">
       <SiteNavbar />
 
-      <section className="flex min-h-[620px] flex-col items-center justify-center bg-[linear-gradient(180deg,#f8f7ef_0%,#eef1ec_100%)] px-6 pb-[90px] pt-[150px] text-center max-md:min-h-[560px] max-sm:min-h-[500px] max-sm:px-5 max-sm:pb-[70px] max-sm:pt-[125px]">
-        <p className="mb-[18px] text-[11px] font-semibold uppercase tracking-[.2em] text-[#9c653f]">BG Tatva knowledge centre</p>
-        <h1 className="m-0 text-[clamp(62px,7vw,108px)] font-medium leading-[.9] tracking-[-.055em] max-sm:text-[54px]">Questions, answered<br /><em className="font-light text-[#9c653f]">with clarity.</em></h1>
-        <span className="mt-[30px] max-w-[650px] text-[18px] leading-[1.65] text-[#59666a] max-sm:text-[15px]">Practical guidance for planning, designing and caring for a refined elevator experience.</span>
+      <section className="flex min-h-[620px] flex-col items-center justify-center bg-[linear-gradient(180deg,#F8F7F1_0%,#F5F3EC_100%)] px-6 pb-[90px] pt-[150px] text-center max-md:min-h-[560px] max-sm:min-h-[500px] max-sm:px-5 max-sm:pb-[70px] max-sm:pt-[125px]">
+        <p className="mb-[18px] text-[11px] font-semibold uppercase tracking-[.2em] text-[#2D4F6E]">BG Tatva knowledge centre</p>
+        <h1 className="m-0 text-[clamp(62px,7vw,108px)] font-medium leading-[.9] tracking-[-.055em] max-sm:text-[54px]">Questions, answered<br /><em className="font-light text-[#2D4F6E]">with clarity.</em></h1>
+        <span className="mt-[30px] max-w-[650px] text-[18px] leading-[1.65] text-[#2D4F6E] max-sm:text-[15px]">Practical guidance for planning, designing and caring for a refined elevator experience.</span>
       </section>
 
       <section className="grid gap-[clamp(60px,9vw,150px)] bg-white px-[clamp(24px,7vw,110px)] py-[130px] lg:grid-cols-[minmax(300px,.72fr)_minmax(0,1.28fr)] max-lg:gap-[60px] max-lg:py-[90px] max-sm:gap-[50px] max-sm:px-[18px] max-sm:py-[72px]" aria-labelledby="faq-title">
         <aside className="self-start lg:sticky lg:top-[116px]">
-          <p className="mb-[18px] text-[11px] font-semibold uppercase tracking-[.2em] text-[#9c653f]">Frequently asked questions</p>
+          <p className="mb-[18px] text-[11px] font-semibold uppercase tracking-[.2em] text-[#2D4F6E]">Frequently asked questions</p>
           <h2 id="faq-title" className="m-0 max-w-[560px] text-[clamp(48px,5vw,76px)] font-medium leading-[.98] tracking-[-.045em] max-lg:max-w-[700px] max-sm:text-[43px]">Everything you need to move forward.</h2>
-          <span className="mt-7 block max-w-[500px] text-[16px] leading-[1.75] text-[#59666a] max-lg:max-w-[650px]">Explore answers about planning, design, installation, safety and long-term care. If your question is more specific, our team is ready to help.</span>
-          <a className="mt-[34px] inline-flex items-center gap-[10px] rounded-full bg-[#2d4f6e] px-[21px] py-[14px] text-[13px] font-semibold text-white" href="/contact">Ask our team <span aria-hidden="true"><LuArrowRight /></span></a>
+          <span className="mt-7 block max-w-[500px] text-[16px] leading-[1.75] text-[#2D4F6E] max-lg:max-w-[650px]">Explore answers about planning, design, installation, safety and long-term care. If your question is more specific, our team is ready to help.</span>
+          <a className="mt-[34px] inline-flex items-center gap-[10px] rounded-full bg-[#2D4F6E] px-[21px] py-[14px] text-[13px] font-semibold text-white" href="/contact">Ask our team <span aria-hidden="true"><LuArrowRight /></span></a>
         </aside>
 
-        <div className="border-t border-[#c9d0ce]">
+        <div className="border-t border-[#F5F3EC]">
           {faqs.slice(0, visibleCount).map(([question, answer], index) => (
-            <article className="border-b border-[#c9d0ce]" key={question}>
-              <button className="flex w-full items-center justify-between gap-[30px] border-0 bg-transparent py-[30px] text-left text-[#172e3b] max-sm:gap-4 max-sm:py-6" type="button" onClick={() => setOpenIndex(openIndex === index ? -1 : index)} aria-expanded={openIndex === index}>
-                <span className="flex items-start gap-[22px] text-[20px] font-medium leading-[1.35] max-sm:gap-3 max-sm:text-[17px]"><small className="min-w-[26px] pt-[5px] text-[10px] tracking-[.08em] text-[#9c653f]">{String(index + 1).padStart(2, '0')}</small>{question}</span>
-                <i className={`grid size-[38px] flex-none place-items-center rounded-full border not-italic max-sm:size-[34px] ${openIndex === index ? 'border-[#d5b17a] bg-[#d5b17a]' : 'border-[#bec7c4]'}`}><LuChevronDown className={`size-[17px] transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`} /></i>
+            <article className="border-b border-[#F5F3EC]" key={question}>
+              <button className="flex w-full items-center justify-between gap-[30px] border-0 bg-transparent py-[30px] text-left text-[#2D4F6E] max-sm:gap-4 max-sm:py-6" type="button" onClick={() => setOpenIndex(openIndex === index ? -1 : index)} aria-expanded={openIndex === index}>
+                <span className="flex items-start gap-[22px] text-[20px] font-medium leading-[1.35] max-sm:gap-3 max-sm:text-[17px]"><small className="min-w-[26px] pt-[5px] text-[10px] tracking-[.08em] text-[#2D4F6E]">{String(index + 1).padStart(2, '0')}</small>{question}</span>
+                <i className={`grid size-[38px] flex-none place-items-center rounded-full border not-italic max-sm:size-[34px] ${openIndex === index ? 'border-[#D5B17A] bg-[#D5B17A]' : 'border-[#F7E1A2]'}`}><LuChevronDown className={`size-[17px] transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`} /></i>
               </button>
-              <div className={`grid transition-[grid-template-rows] duration-300 ease-out ${openIndex === index ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}><p className={`m-0 ml-12 min-h-0 max-w-[720px] overflow-hidden text-[15px] leading-[1.75] text-[#59666a] max-sm:ml-[38px] max-sm:text-[14px] ${openIndex === index ? 'pb-[30px]' : ''}`}>{answer}</p></div>
+              <div className={`grid transition-[grid-template-rows] duration-300 ease-out ${openIndex === index ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}><p className={`m-0 ml-12 min-h-0 max-w-[720px] overflow-hidden text-[15px] leading-[1.75] text-[#2D4F6E] max-sm:ml-[38px] max-sm:text-[14px] ${openIndex === index ? 'pb-[30px]' : ''}`}>{answer}</p></div>
             </article>
           ))}
 
           {visibleCount < faqs.length && (
-            <button className="mx-auto mt-[46px] flex items-center gap-[11px] rounded-full border border-[#2d4f6e] bg-transparent px-6 py-[15px] text-[13px] font-semibold text-[#172e3b] transition-colors hover:bg-[#2d4f6e] hover:text-white" type="button" onClick={() => setVisibleCount(faqs.length)}>
+            <button className="mx-auto mt-[46px] flex items-center gap-[11px] rounded-full border border-[#2D4F6E] bg-transparent px-6 py-[15px] text-[13px] font-semibold text-[#2D4F6E] transition-colors hover:bg-[#2D4F6E] hover:text-white" type="button" onClick={() => setVisibleCount(faqs.length)}>
               Load 15 more questions <span aria-hidden="true"><LuArrowRight /></span>
             </button>
           )}
         </div>
       </section>
 
-      <section className="flex min-h-[500px] flex-col items-center justify-center bg-[#d5b17a] px-6 py-20 text-center max-sm:min-h-[430px]">
+      <section className="flex min-h-[500px] flex-col items-center justify-center bg-[#D5B17A] px-6 py-20 text-center max-sm:min-h-[430px]">
         <LuMessageCircle className="size-[34px]" aria-hidden="true" />
         <p className="mb-[14px] mt-6 text-[11px] font-semibold uppercase tracking-[.18em]">Still have a question?</p>
         <h2 className="m-0 text-[clamp(50px,6vw,86px)] font-medium leading-none max-sm:text-[46px]">Let’s talk about your project.</h2>
-        <a className="mt-[34px] inline-flex items-center gap-[10px] rounded-full bg-[#172e3b] px-[22px] py-[14px] text-white" href="mailto:info@bgtatva.com"><LuMail className="size-[17px]" /> info@bgtatva.com</a>
+        <a className="mt-[34px] inline-flex items-center gap-[10px] rounded-full bg-[#2D4F6E] px-[22px] py-[14px] text-white" href="mailto:info@bgtatva.com"><LuMail className="size-[17px]" /> info@bgtatva.com</a>
       </section>
 
       <SiteFooter />

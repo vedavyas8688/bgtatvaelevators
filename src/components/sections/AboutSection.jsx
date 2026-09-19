@@ -38,7 +38,7 @@ export default function AboutSection() {
               <textPath href="#about-circle" startOffset="75%" textAnchor="middle">MORE ABOUT US</textPath>
             </text>
           </svg>
-          <span aria-hidden="true"><LuArrowRight /></span>
+          <LuArrowRight className="about-action-arrow" aria-hidden="true" />
         </a>
       </div>
 

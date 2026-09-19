@@ -1,15 +1,15 @@
 export const finishes = [
-  { id: 'gold', name: 'Champagne Gold', swatch: 'linear-gradient(135deg,#8f6538,#ead09b 48%,#8b6339)', image: '/images/elevator-cabin-base.png', door: 'linear-gradient(105deg,#6e4b2c,#d0aa70 42%,#745032 72%,#c79b5e)', metal: '#b68b50' },
-  { id: 'steel', name: 'Brushed Steel', swatch: 'linear-gradient(110deg,#7d8587,#e8e9e5 48%,#767d7e)', image: '/images/cabin-steel.png', door: 'linear-gradient(105deg,#666d6d 0%,#aeb4b3 28%,#d7d9d6 48%,#858b8a 72%,#bcc0be 100%)', metal: '#aeb4b3' },
-  { id: 'black', name: 'Matte Black', swatch: 'linear-gradient(135deg,#101313,#484b49)', image: '/images/cabin-black.png', door: 'linear-gradient(110deg,#0d0f0f,#363a39 45%,#141717)', metal: '#444948' },
-  { id: 'walnut', name: 'Walnut', swatch: 'repeating-linear-gradient(80deg,#432718 0,#795038 5px,#51301f 9px)', image: '/images/cabin-walnut.png', door: 'linear-gradient(100deg,#382217,#6f472f 28%,#4a2c1c 53%,#7a5035 78%,#3a2317)', metal: '#9a7046' },
-  { id: 'ivory', name: 'Ivory Stone', swatch: 'linear-gradient(125deg,#d8d1c1,#f1ecdf 55%,#bbb19e)', image: '/images/cabin-ivory.png', door: 'linear-gradient(120deg,#bcb4a4,#eee8dc 45%,#c7beae 72%,#e5ded0)', metal: '#c1a370' },
+  { id: 'gold', name: 'Champagne Gold', swatch: 'linear-gradient(135deg,#2D4F6E,#F7E1A2 48%,#2D4F6E)', image: '/images/elevator-cabin-base.png', door: 'linear-gradient(105deg,#2D4F6E,#D5B17A 42%,#2D4F6E 72%,#D5B17A)', metal: '#D5B17A' },
+  { id: 'steel', name: 'Brushed Steel', swatch: 'linear-gradient(110deg,#D5B17A,#F5F3EC 48%,#2D4F6E)', image: '/images/cabin-steel.png', door: 'linear-gradient(105deg,#2D4F6E 0%,#D5B17A 28%,#F5F3EC 48%,#D5B17A 72%,#F7E1A2 100%)', metal: '#D5B17A' },
+  { id: 'black', name: 'Matte Black', swatch: 'linear-gradient(135deg,#2D4F6E,#2D4F6E)', image: '/images/cabin-black.png', door: 'linear-gradient(110deg,#2D4F6E,#2D4F6E 45%,#2D4F6E)', metal: '#2D4F6E' },
+  { id: 'walnut', name: 'Walnut', swatch: 'repeating-linear-gradient(80deg,#2D4F6E 0,#2D4F6E 5px,#2D4F6E 9px)', image: '/images/cabin-walnut.png', door: 'linear-gradient(100deg,#2D4F6E,#2D4F6E 28%,#2D4F6E 53%,#2D4F6E 78%,#2D4F6E)', metal: '#2D4F6E' },
+  { id: 'ivory', name: 'Ivory Stone', swatch: 'linear-gradient(125deg,#F7E1A2,#F5F3EC 55%,#D5B17A)', image: '/images/cabin-ivory.png', door: 'linear-gradient(120deg,#D5B17A,#F5F3EC 45%,#D5B17A 72%,#F5F3EC)', metal: '#D5B17A' },
 ]
 
 export const lightTemperatures = [
-  { id: 'warm', name: 'Warm', color: '#ffd28f', tint: 'rgba(255,185,92,.24)' },
-  { id: 'neutral', name: 'Neutral', color: '#fff3d8', tint: 'rgba(255,241,216,.17)' },
-  { id: 'cool', name: 'Cool', color: '#d9efff', tint: 'rgba(187,224,255,.18)' },
+  { id: 'warm', name: 'Warm', color: '#F7E1A2', tint: 'rgba(213,177,122,.24)' },
+  { id: 'neutral', name: 'Neutral', color: '#F5F3EC', tint: 'rgba(245,243,236,.17)' },
+  { id: 'cool', name: 'Cool', color: '#F5F3EC', tint: 'rgba(245,243,236,.18)' },
 ]
 
 export const lightStyles = [

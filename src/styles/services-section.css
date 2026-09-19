@@ -1,7 +1,7 @@
 .services-scroll {
   position: relative;
-  background: #fff;
-  color: #000;
+  background: #F8F7F1;
+  color: #2D4F6E;
 }
 
 .services-stage {
@@ -10,7 +10,7 @@
   grid-template-columns: 47% 53%;
   width: 100%;
   min-height: 300vh;
-  background: #fff;
+  background: #F8F7F1;
 }
 
 .services-copy-stage { position: relative; }
@@ -27,7 +27,7 @@
 
 .service-copy > span,
 .services-mobile article > span {
-  color: #7f4d1b;
+  color: #2D4F6E;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: .18em;
@@ -37,7 +37,7 @@
 .service-copy h2,
 .services-mobile h2 {
   margin: 22px 0 0;
-  color: #2d4f6e;
+  color: #2D4F6E;
   font-size: clamp(48px, 4.3vw, 72px);
   font-weight: 400;
   line-height: 1;
@@ -48,7 +48,7 @@
 .services-mobile p {
   max-width: 610px;
   margin: 54px 0 0;
-  color: #2d4f6e;
+  color: #2D4F6E;
   font-size: 17px;
   line-height: 1.6;
 }
@@ -61,16 +61,16 @@
   min-height: 48px;
   margin-top: 30px;
   padding: 0 22px;
-  background: #2d4f6e;
-  color: #fff;
+  background: #2D4F6E;
+  color: #F8F7F1;
   font-size: 13px;
   font-weight: 600;
   transition: background .3s ease, transform .3s ease;
 }
 .service-copy a { align-self: flex-start; }
 .service-copy a:hover,
-.services-mobile a:hover { background: #7f4d1b; transform: translateY(-2px); }
-.service-copy a b { color: #f7e1a2; font-size: 20px; font-weight: 400; }
+.services-mobile a:hover { background: #2D4F6E; transform: translateY(-2px); }
+.service-copy a b { color: #F7E1A2; font-size: 20px; font-weight: 400; }
 
 .services-image-stage {
   position: sticky;
@@ -88,7 +88,7 @@
   margin: 0;
   overflow: hidden;
   border-radius: 24px;
-  background: #2d4f6e;
+  background: #2D4F6E;
   will-change: left, top, width, height, opacity;
 }
 

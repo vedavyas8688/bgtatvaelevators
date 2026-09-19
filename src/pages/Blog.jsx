@@ -31,7 +31,7 @@ export default function Blog() {
             </article>
           ))}
         </div>
-        {visibleCount < blogPosts.length && <button type="button" onClick={() => setVisibleCount(blogPosts.length)} className="mx-auto mt-20 flex items-center gap-3 rounded-full border border-[#172e3b] bg-transparent px-6 py-[14px] text-[13px] font-semibold text-[#172e3b] transition-colors hover:bg-[#172e3b] hover:text-white">Load more articles <span aria-hidden="true"><LuArrowRight /></span></button>}
+        {visibleCount < blogPosts.length && <button type="button" onClick={() => setVisibleCount(blogPosts.length)} className="mx-auto mt-20 flex items-center gap-3 rounded-full border border-[#2D4F6E] bg-transparent px-6 py-[14px] text-[13px] font-semibold text-[#2D4F6E] transition-colors hover:bg-[#2D4F6E] hover:text-white">Load more articles <span aria-hidden="true"><LuArrowRight /></span></button>}
       </section>
 
       <section className="blog-cta"><p>Planning your next project?</p><h2>Let&apos;s create an elevator<br />worth experiencing.</h2><a href="/contact">Start a conversation <span aria-hidden="true"><LuArrowRight /></span></a></section>

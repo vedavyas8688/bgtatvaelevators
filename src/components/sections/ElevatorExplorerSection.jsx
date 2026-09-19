@@ -72,40 +72,40 @@ export default function ElevatorExplorerSection() {
   }
 
   return (
-    <section className="bg-[#f4f1e9] px-[clamp(20px,5vw,76px)] py-[clamp(60px,6vw,90px)] text-[#172e3b]" aria-labelledby="elevator-explorer-title">
+    <section className="bg-[#F5F3EC] px-[clamp(20px,5vw,76px)] py-[clamp(60px,6vw,90px)] text-[#2D4F6E]" aria-labelledby="elevator-explorer-title">
       <header className="mx-auto max-w-[820px] text-center">
-        <p className="m-0 text-[11px] font-semibold uppercase tracking-[.2em] text-[#9c653f]">Designed around every journey</p>
+        <p className="m-0 text-[11px] font-semibold uppercase tracking-[.2em] text-[#2D4F6E]">Designed around every journey</p>
         <h2 id="elevator-explorer-title" className="mb-0 mt-4 text-[clamp(48px,5.5vw,82px)] font-medium leading-[.98] tracking-[-.045em]">Find the elevator<br />that fits your life.</h2>
-        <span className="mx-auto mt-5 block max-w-[620px] text-[16px] leading-[1.65] text-[#59666a]">Choose an elevator type, then explore the materials and expressions that can shape its character.</span>
+        <span className="mx-auto mt-5 block max-w-[620px] text-[16px] leading-[1.65] text-[#2D4F6E]">Choose an elevator type, then explore the materials and expressions that can shape its character.</span>
       </header>
 
-      <div className="mx-auto mt-8 flex w-fit max-w-full gap-1 overflow-x-auto rounded-full border border-[#c89d62] bg-white/60 p-1.5" role="tablist" aria-label="Elevator types">
+      <div className="mx-auto mt-8 flex w-fit max-w-full gap-1 overflow-x-auto rounded-full border border-[#D5B17A] bg-white/60 p-1.5" role="tablist" aria-label="Elevator types">
         {categories.map((item, index) => {
           const Icon = item.icon
           const active = index === categoryIndex
-          return <button key={item.id} type="button" role="tab" aria-selected={active} onClick={() => selectCategory(index)} className={`inline-flex min-h-[42px] shrink-0 items-center gap-2 rounded-full px-4 text-[12px] font-medium transition-colors ${active ? 'bg-[#172e3b] text-white' : 'bg-transparent text-[#536166] hover:bg-white'}`}><Icon className="size-4" />{item.label}</button>
+          return <button key={item.id} type="button" role="tab" aria-selected={active} onClick={() => selectCategory(index)} className={`inline-flex min-h-[42px] shrink-0 items-center gap-2 rounded-full px-4 text-[12px] font-medium transition-colors ${active ? 'bg-[#2D4F6E] text-white' : 'bg-transparent text-[#2D4F6E] hover:bg-white'}`}><Icon className="size-4" />{item.label}</button>
         })}
       </div>
 
       <div className="mx-auto mt-10 grid max-w-[1320px] items-center gap-[clamp(38px,5vw,76px)] lg:grid-cols-[1.03fr_.97fr] max-lg:max-w-[850px]">
-        <figure className="relative m-0 min-h-[560px] overflow-hidden rounded-[34px] bg-[#dfe4df] max-sm:min-h-[420px] max-sm:rounded-[24px]">
+        <figure className="relative m-0 min-h-[560px] overflow-hidden rounded-[34px] bg-[#F5F3EC] max-sm:min-h-[420px] max-sm:rounded-[24px]">
           <img key={image} src={image} alt={`${category.label} — ${optionLabel}`} className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-[1.025]" />
-          <figcaption className="absolute left-5 top-5 rounded-full border border-white/50 bg-white/90 px-4 py-2 text-[11px] font-medium text-[#172e3b] backdrop-blur-md">{optionLabel}</figcaption>
+          <figcaption className="absolute left-5 top-5 rounded-full border border-white/50 bg-white/90 px-4 py-2 text-[11px] font-medium text-[#2D4F6E] backdrop-blur-md">{optionLabel}</figcaption>
         </figure>
 
         <article>
-          <p className="m-0 text-[10px] font-semibold uppercase tracking-[.2em] text-[#9c653f]">{category.eyebrow}</p>
+          <p className="m-0 text-[10px] font-semibold uppercase tracking-[.2em] text-[#2D4F6E]">{category.eyebrow}</p>
           <h3 className="mb-0 mt-4 text-[clamp(38px,4vw,60px)] font-medium leading-[1.02] tracking-[-.035em]">{category.title}</h3>
-          <p className="mb-0 mt-7 max-w-[590px] text-[16px] leading-[1.75] text-[#59666a]">{category.description}</p>
+          <p className="mb-0 mt-7 max-w-[590px] text-[16px] leading-[1.75] text-[#2D4F6E]">{category.description}</p>
 
           <div className="mt-9">
-            <p className="m-0 text-[10px] font-semibold uppercase tracking-[.18em] text-[#9c653f]">Choose an expression</p>
+            <p className="m-0 text-[10px] font-semibold uppercase tracking-[.18em] text-[#2D4F6E]">Choose an expression</p>
             <div className="mt-3 flex flex-wrap gap-2.5">
-              {category.options.map(([label], index) => <button key={label} type="button" onClick={() => setOptionIndex(index)} aria-pressed={optionIndex === index} className={`rounded-full border px-4 py-2.5 text-[12px] transition-colors ${optionIndex === index ? 'border-[#d5b17a] bg-[#d5b17a] text-[#172e3b]' : 'border-[#bdc5c2] bg-transparent text-[#536166] hover:border-[#9c653f] hover:bg-white'}`}>{label}</button>)}
+              {category.options.map(([label], index) => <button key={label} type="button" onClick={() => setOptionIndex(index)} aria-pressed={optionIndex === index} className={`rounded-full border px-4 py-2.5 text-[12px] transition-colors ${optionIndex === index ? 'border-[#D5B17A] bg-[#D5B17A] text-[#2D4F6E]' : 'border-[#F7E1A2] bg-transparent text-[#2D4F6E] hover:border-[#2D4F6E] hover:bg-white'}`}>{label}</button>)}
             </div>
           </div>
 
-          <a href="/elevators" className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#172e3b] px-[22px] py-[14px] text-[13px] font-semibold text-white">Explore elevator solutions <span aria-hidden="true"><LuArrowRight /></span></a>
+          <a href="/elevators" className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#2D4F6E] px-[22px] py-[14px] text-[13px] font-semibold text-white">Explore elevator solutions <span aria-hidden="true"><LuArrowRight /></span></a>
         </article>
       </div>
     </section>
