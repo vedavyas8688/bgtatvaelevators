@@ -1,0 +1,156 @@
+.about-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) clamp(280px, 24vw, 320px);
+  gap: 20px;
+  min-height: 640px;
+  padding: 36px 3%;
+  background: #fff;
+  color: #2d4f6e;
+}
+
+.about-vertical {
+  align-self: start;
+  justify-self: center;
+  margin: 46px 0 0;
+  color: #2d4f6e;
+  font: 500 clamp(56px, 5.4vw, 82px)/1 'Jost', sans-serif;
+  letter-spacing: -.04em;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.about-panel {
+  position: relative;
+  align-self: start;
+  height: 460px;
+  margin-top: 0;
+  padding: clamp(64px, 7vw, 100px) clamp(54px, 6vw, 90px);
+  border-radius: 42px;
+  background: #f7e1a2;
+}
+
+.about-tabs {
+  display: flex;
+  gap: clamp(28px, 5vw, 72px);
+}
+
+.about-tabs button {
+  position: relative;
+  padding: 0 0 12px;
+  border: 0;
+  background: transparent;
+  color: #2d4f6e;
+  font: 600 clamp(20px, 2vw, 29px)/1 'Jost', sans-serif;
+  cursor: pointer;
+}
+
+.about-tabs button::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #7f4d1b;
+  content: '';
+  opacity: 0;
+  transform: scaleX(.35);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.about-tabs button[aria-selected='true']::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.about-tabs button:focus-visible,
+.about-action:focus-visible { outline: 3px solid #7f4d1b; outline-offset: 5px; }
+
+.about-copy {
+  max-width: 720px;
+  margin: 34px 0 0;
+  color: #000;
+  font-size: clamp(17px, 1.5vw, 22px);
+  line-height: 1.58;
+  animation: about-copy-in .45s ease both;
+}
+
+.about-action {
+  position: absolute;
+  bottom: -70px;
+  left: 11%;
+  display: grid;
+  width: 150px;
+  height: 150px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #7f4d1b;
+}
+
+.about-action::after {
+  position: absolute;
+  inset: 31px;
+  border-radius: 50%;
+  background: conic-gradient(from 35deg, #2d4f6e 0 82%, transparent 82% 100%);
+  content: '';
+  mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+  transform-origin: 50% 50%;
+  will-change: transform;
+  animation: about-ring-spin 18s linear infinite;
+}
+
+.about-action svg {
+  position: absolute;
+  inset: 9px;
+  width: 132px;
+  height: 132px;
+  transform-origin: 50% 50%;
+  will-change: transform;
+  animation: about-spin 14s linear infinite !important;
+}
+
+.about-action text { fill: #000; font: 500 9.5px Jost, sans-serif; letter-spacing: 1.1px; }
+.about-action span { position: relative; z-index: 2; color: #000; font-size: 38px; font-weight: 300; line-height: 1; transition: transform .3s ease; }
+.about-action:hover span { transform: translate(4px, -4px) rotate(-45deg); }
+
+.about-image {
+  height: 556px;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 42px;
+  background: #2d4f6e;
+}
+
+.about-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .8s cubic-bezier(.16,1,.3,1); }
+.about-image:hover img { transform: scale(1.025); }
+
+@keyframes about-copy-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes about-spin { to { transform: rotate(360deg); } }
+@keyframes about-ring-spin { to { transform: rotate(-360deg); } }
+
+@media (max-width: 960px) {
+  .about-section { grid-template-columns: 70px 1fr; min-height: auto; padding: 28px 4% 100px; }
+  .about-panel { height: auto; min-height: 430px; }
+  .about-image { grid-column: 2; width: 66%; height: 440px; min-height: 0; margin: -80px 0 0 auto; }
+}
+
+@media (max-width: 640px) {
+  .about-section { display: flex; flex-direction: column; gap: 18px; padding: 56px 18px 90px; }
+  .about-vertical { align-self: auto; margin: 0; font-size: 52px; writing-mode: initial; transform: none; }
+  .about-panel { min-height: 470px; padding: 42px 26px 90px; border-radius: 28px; }
+  .about-tabs { justify-content: space-between; gap: 12px; }
+  .about-tabs button { font-size: 18px; }
+  .about-copy { margin-top: 28px; font-size: 16px; }
+  .about-action { bottom: -58px; left: 26px; width: 124px; height: 124px; }
+  .about-action::after { inset: 26px; }
+  .about-action svg { inset: 7px; width: 110px; height: 110px; }
+  .about-image { order: 3; width: 100%; height: 470px; margin: 50px 0 0; border-radius: 28px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-copy { animation: none; }
+  .about-action svg { animation: about-spin 28s linear infinite !important; }
+  .about-action::after { animation: about-ring-spin 36s linear infinite !important; }
+}

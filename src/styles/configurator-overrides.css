@@ -1,0 +1,72 @@
+/* Final configurator surface overrides load after the base scene styles. */
+.cabin-interactive .door-system {
+  inset: 4% 3.5% 0;
+  z-index: 5;
+  overflow: hidden;
+  border: 1px solid #111817;
+  box-shadow: inset 0 0 0 2px #ffffff0d, 0 0 22px #0008;
+}
+
+.cabin-interactive .door-panel {
+  top: 0;
+  bottom: 0;
+  border: 0;
+  background-color: var(--panel-metal);
+  background-image: var(--door-finish);
+  background-size: 100% 100%;
+  box-shadow: inset -12px 0 24px #0002, inset 10px 0 18px #fff1;
+  transition: transform 1.05s cubic-bezier(.65, 0, .35, 1), background .45s;
+}
+
+.cabin-interactive .door-left { border-right: 1px solid #171c1d99; }
+.cabin-interactive .door-right { border-left: 1px solid #ffffff24; }
+
+.cabin-interactive .door-system .door-left,
+.cabin-interactive .door-system .door-right {
+  transform: translateX(0);
+}
+
+.cabin-interactive .door-center.is-open .door-left,
+.cabin-interactive .door-glass.is-open .door-left {
+  transform: translateX(-101%);
+}
+
+.cabin-interactive .door-center.is-open .door-right,
+.cabin-interactive .door-glass.is-open .door-right {
+  transform: translateX(101%);
+}
+
+/* Side-opening doors telescope completely into the left pocket. */
+.cabin-interactive .door-side .door-left {
+  width: 67%;
+  z-index: 2;
+}
+
+.cabin-interactive .door-side .door-right {
+  width: 34%;
+  z-index: 1;
+}
+
+.cabin-interactive .door-side.is-open .door-left {
+  transform: translateX(-102%);
+}
+
+.cabin-interactive .door-side.is-open .door-right {
+  transform: translateX(-300%);
+}
+
+.cabin-interactive .door-glass .door-panel {
+  border: 1px solid color-mix(in srgb, var(--panel-metal), #fff 38%);
+  background-color: color-mix(in srgb, var(--panel-metal) 28%, transparent);
+  background-image: linear-gradient(112deg, #ffffff35 0%, #ffffff08 31%, transparent 48%, #ffffff24 64%, transparent 82%);
+  background-size: 100% 100%;
+  box-shadow: inset 0 0 0 1px #ffffff20, inset 0 0 36px #d9f5f516;
+  backdrop-filter: blur(3px) brightness(.78);
+}
+
+.cabin-interactive .control-panel { z-index: 4; }
+.cabin-interactive .door-header {
+  z-index: 8;
+  height: 4%;
+  background: linear-gradient(180deg, #171a1a, var(--panel-metal), #171a1a);
+}
