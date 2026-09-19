@@ -34,17 +34,19 @@ const articleRecords = [
   ['A Material Guide to Durable Elevator Flooring', 'Compare stone, tile and resilient finishes for weight, maintenance, grip and visual continuity.', '/images/cabin-walnut.png', 'Materials', 'November 01, 2025', 'Design Studio', 'DS'],
 ]
 
-export const blogPosts = articleRecords.map(([title, excerpt, image, category, date, author, initials], index) => ({
-  id: `article-${index + 1}`,
-  title,
-  excerpt,
-  image,
-  category,
-  date,
-  author,
-  initials,
-  href: `/blog#article-${index + 1}`,
-}))
+export const blogPosts = articleRecords
+  .map(([title, excerpt, image, category, date, author, initials], index) => ({
+    id: `article-${index + 1}`,
+    title,
+    excerpt,
+    image,
+    category,
+    date,
+    author,
+    initials,
+    href: `/blog#article-${index + 1}`,
+  }))
+  .sort((first, second) => new Date(second.date).getTime() - new Date(first.date).getTime())
 
 // Keep every surface (the journal and the homepage insight panel) on the same
 // source of truth. Sorting here means a newly-added, correctly dated post will
