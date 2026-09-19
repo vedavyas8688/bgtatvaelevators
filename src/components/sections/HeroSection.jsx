@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section id="home" className="relative min-h-[720px] w-full overflow-hidden bg-brand-charcoal lg:min-h-screen">
       <img src="/images/hero-background.png" alt="Glass elevator in a contemporary architectural atrium" fetchPriority="high" className="absolute inset-0 h-full w-full object-fill" />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(45,79,110,.96)_0%,rgba(45,79,110,.72)_31%,rgba(45,79,110,.08)_63%,rgba(45,79,110,.2)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,43,69,.96)_0%,rgba(15,43,69,.72)_31%,rgba(15,43,69,.08)_63%,rgba(15,43,69,.2)_100%)]" />
       <SiteNavbar />
 
       <div className="absolute left-[5.7%] top-[29.5%] z-10">

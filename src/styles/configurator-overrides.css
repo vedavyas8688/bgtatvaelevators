@@ -3,8 +3,8 @@
   inset: 4% 3.5% 0;
   z-index: 5;
   overflow: hidden;
-  border: 1px solid #2D4F6E;
-  box-shadow: inset 0 0 0 2px #F8F7F10D, 0 0 22px #2D4F6E88;
+  border: 1px solid #0F2B45;
+  box-shadow: inset 0 0 0 2px #F8F7F10D, 0 0 22px #0F2B4588;
 }
 
 .cabin-interactive .door-panel {
@@ -14,11 +14,11 @@
   background-color: var(--panel-metal);
   background-image: var(--door-finish);
   background-size: 100% 100%;
-  box-shadow: inset -12px 0 24px #2D4F6E22, inset 10px 0 18px #F8F7F111;
+  box-shadow: inset -12px 0 24px #0F2B4522, inset 10px 0 18px #F8F7F111;
   transition: transform 1.05s cubic-bezier(.65, 0, .35, 1), background .45s;
 }
 
-.cabin-interactive .door-left { border-right: 1px solid #2D4F6E99; }
+.cabin-interactive .door-left { border-right: 1px solid #0F2B4599; }
 .cabin-interactive .door-right { border-left: 1px solid #F8F7F124; }
 
 .cabin-interactive .door-system .door-left,
@@ -68,5 +68,5 @@
 .cabin-interactive .door-header {
   z-index: 8;
   height: 4%;
-  background: linear-gradient(180deg, #2D4F6E, var(--panel-metal), #2D4F6E);
+  background: linear-gradient(180deg, #0F2B45, var(--panel-metal), #0F2B45);
 }

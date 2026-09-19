@@ -1,0 +1,133 @@
+:root {
+  --color-page: #F8F7F1;
+  --color-panel: #F5F3EC;
+  --color-blue: #0F2B45;
+  --color-gold: #EB9B34;
+}
+
+html,
+body,
+#root,
+main,
+.blog-page,
+.article-page,
+.contact-page {
+  background: var(--color-page);
+}
+
+/* Normalize only full-width light sections. Nested cards and panels retain contrast. */
+main section.bg-\[\#F5F3EC\],
+.metrics-section,
+.insights-section,
+.social-section,
+.design-studio,
+.studio-layout,
+.elevator-editorial {
+  background: var(--color-page);
+}
+
+.insights-section {
+  box-shadow: 0 0 0 100vmax var(--color-page);
+}
+
+.social-set a {
+  border-color: var(--color-page);
+}
+
+/* Elevator page: keep the canvas consistent and separate content panels clearly. */
+.elevators-page > section:nth-of-type(2) > div:last-child {
+  border: 1px solid color-mix(in srgb, var(--color-gold) 35%, transparent);
+  background: var(--color-panel);
+}
+
+.elevators-page > section:nth-of-type(3) > header > div > p {
+  color: var(--color-gold);
+}
+
+.elevators-page > section:nth-of-type(3) > header > p {
+  color: var(--color-blue);
+}
+
+.elevators-page > section:nth-of-type(3) > div:last-child {
+  gap: 18px;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+.elevators-page > section:nth-of-type(3) > div:last-child > article {
+  min-height: 410px;
+  border: 1px solid color-mix(in srgb, var(--color-gold) 35%, transparent);
+  border-radius: 26px;
+  background: var(--color-panel);
+}
+
+.elevators-page > section:nth-of-type(3) > div:last-child > article > svg {
+  color: var(--color-gold);
+}
+
+/* Gold is reserved for accents; descriptive copy stays readable. */
+.contact-process article > p {
+  color: var(--color-panel);
+}
+
+.form-submit > p {
+  color: var(--color-blue);
+}
+
+/* Projects page color hierarchy */
+.projects-page > section:nth-of-type(1) > div > div:first-child > p,
+.projects-page > section:nth-of-type(3) > header > div > p,
+.projects-page > section:nth-of-type(5) > header > p {
+  color: var(--color-gold);
+}
+
+.projects-page > section:nth-of-type(1) h1 em {
+  color: var(--color-gold);
+}
+
+.projects-page > section:nth-of-type(3) [role='tablist'] {
+  border-color: color-mix(in srgb, var(--color-gold) 45%, transparent);
+  background: var(--color-panel);
+}
+
+.projects-page > section:nth-of-type(3) article > p:last-child {
+  border-color: color-mix(in srgb, var(--color-blue) 14%, transparent);
+}
+
+.projects-page > section:nth-of-type(5) > div > article > b,
+.projects-page > section:nth-of-type(5) > div > article > svg {
+  color: var(--color-gold);
+}
+
+.projects-page > section:nth-of-type(5) > header > p:last-child,
+.projects-page > section:nth-of-type(5) article p,
+.projects-page > section:nth-of-type(3) article p {
+  color: var(--color-blue);
+}
+
+.projects-page > section:nth-of-type(5) {
+  grid-template-columns: minmax(420px, .92fr) minmax(0, 1.08fr);
+  gap: clamp(54px, 6vw, 96px);
+}
+
+.projects-page > section:nth-of-type(5) > header {
+  width: 100%;
+  max-width: 590px;
+}
+
+.projects-page > section:nth-of-type(5) > header > h2 {
+  max-width: 590px;
+  font-size: clamp(46px, 4.15vw, 66px);
+  line-height: .98;
+}
+
+.projects-page > section:nth-of-type(5) > header > p:last-child {
+  max-width: 540px;
+}
+
+@media (max-width: 1023px) {
+  .projects-page > section:nth-of-type(5) {
+    grid-template-columns: 1fr;
+  }
+}

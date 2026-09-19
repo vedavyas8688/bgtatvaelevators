@@ -11,6 +11,8 @@ import './styles/editorial-sections.css'
 import './styles/blog-page.css'
 import './styles/contact-page.css'
 import './styles/site-navbar.css'
+import './styles/theme.css'
+import './styles/responsive.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode><App /></React.StrictMode>,

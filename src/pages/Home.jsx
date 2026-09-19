@@ -7,5 +7,5 @@ import EditorialSections from '../components/sections/EditorialSections'
 import SiteFooter from '../components/SiteFooter'
 
 export default function Home() {
-  return <main><HeroSection /><AutoGallerySection /><AboutSection /><ServicesSection /><ElevatorExplorerSection /><EditorialSections /><SiteFooter /></main>
+  return <main className="home-page"><HeroSection /><AutoGallerySection /><AboutSection /><ServicesSection /><ElevatorExplorerSection /><EditorialSections /><SiteFooter /></main>
 }

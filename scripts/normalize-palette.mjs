@@ -4,9 +4,8 @@ import { extname, join } from 'node:path'
 const palette = [
   '#F8F7F1',
   '#F5F3EC',
-  '#D5B17A',
-  '#F7E1A2',
-  '#2D4F6E',
+  '#EB9B34',
+  '#0F2B45',
 ]
 
 const allowedExtensions = new Set(['.css', '.js', '.jsx'])
@@ -47,7 +46,7 @@ const normalizeContent = (content, extension) => {
   if (extension === '.css') {
     result = result
       .replace(/(?<![-\w])white(?![-\w])/gi, '#F8F7F1')
-      .replace(/(?<![-\w])black(?![-\w])/gi, '#2D4F6E')
+      .replace(/(?<![-\w])black(?![-\w])/gi, '#0F2B45')
   }
 
   return result

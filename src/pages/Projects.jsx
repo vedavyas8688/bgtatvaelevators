@@ -3,5 +3,5 @@ import SiteFooter from '../components/SiteFooter'
 import { ProjectLibrarySection, ProjectsApproachSection, ProjectsCtaSection, ProjectsHeroSection } from '../components/sections/ProjectsPageSections'
 
 export default function Projects() {
-  return <main className="min-h-screen bg-white text-[#2D4F6E]"><SiteNavbar /><ProjectsHeroSection /><ProjectLibrarySection /><ProjectsApproachSection /><ProjectsCtaSection /><SiteFooter /></main>
+  return <main className="projects-page min-h-screen bg-white text-[#0F2B45]"><SiteNavbar /><ProjectsHeroSection /><ProjectLibrarySection /><ProjectsApproachSection /><ProjectsCtaSection /><SiteFooter /></main>
 }

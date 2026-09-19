@@ -5,19 +5,19 @@ export default {
     extend: {
       colors: {
         white: '#F8F7F1',
-        black: '#2D4F6E',
+        black: '#0F2B45',
         brand: {
-          blue: '#2D4F6E',
-          brown: '#2D4F6E',
-          gold: '#F7E1A2',
+          blue: '#0F2B45',
+          brown: '#0F2B45',
+          gold: '#EB9B34',
           white: '#F8F7F1',
-          black: '#2D4F6E',
-          royal: '#2D4F6E',
-          navy: '#2D4F6E',
+          black: '#0F2B45',
+          royal: '#0F2B45',
+          navy: '#0F2B45',
           ivory: '#F8F7F1',
-          charcoal: '#2D4F6E',
-          gray: '#2D4F6E',
-          silver: '#2D4F6E',
+          charcoal: '#0F2B45',
+          gray: '#0F2B45',
+          silver: '#0F2B45',
         },
       },
       fontFamily: {
@@ -26,7 +26,7 @@ export default {
       },
       letterSpacing: { luxury: '0.22em' },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(90deg, rgba(45,79,110,.98) 0%, rgba(45,79,110,.86) 45%, rgba(45,79,110,.2) 100%)',
+        'hero-gradient': 'linear-gradient(90deg, rgba(15,43,69,.98) 0%, rgba(15,43,69,.86) 45%, rgba(15,43,69,.2) 100%)',
       },
     },
   },
