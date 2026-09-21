@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { services } from '../../data/servicesData'
+import { services } from '../../../data/servicesData'
 import { LuArrowRight } from 'react-icons/lu'
 
 const clamp = (value, minimum, maximum) => Math.min(Math.max(value, minimum), maximum)
@@ -47,7 +47,7 @@ export default function ServicesSection() {
                 <span>Our service</span>
                 <h2>{service.title}</h2>
                 <p>{service.description}</p>
-                <a href="/elevators#elevator-types">Service detail <b aria-hidden="true"><LuArrowRight /></b></a>
+                <a className="editorial-cta" href="/elevators#elevator-types">Service detail <b aria-hidden="true"><LuArrowRight /></b></a>
               </article>
             )
           })}
@@ -91,7 +91,7 @@ export default function ServicesSection() {
             <span>Our service · 0{index + 1}</span>
             <h2>{service.title}</h2>
             <p>{service.description}</p>
-            <a href="/elevators#elevator-types">Service detail <span aria-hidden="true"><LuArrowRight /></span></a>
+            <a className="editorial-cta" href="/elevators#elevator-types">Service detail <span aria-hidden="true"><LuArrowRight /></span></a>
           </article>
         ))}
       </div>

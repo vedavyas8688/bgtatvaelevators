@@ -105,7 +105,7 @@ export default function ElevatorExplorerSection() {
             </div>
           </div>
 
-          <a href="/elevators" className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#0F2B45] px-[22px] py-[14px] text-[13px] font-semibold text-white">Explore elevator solutions <span aria-hidden="true"><LuArrowRight /></span></a>
+          <a href="/elevators" className="editorial-cta mt-9">Explore elevator solutions <span aria-hidden="true"><LuArrowRight /></span></a>
         </article>
       </div>
     </section>

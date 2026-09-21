@@ -1,0 +1,5 @@
+import { LuArrowRight } from 'react-icons/lu'
+
+export default function LifestyleSection() {
+  return <section className="lifestyle-section" aria-labelledby="lifestyle-title"><header><p>Made for the way you live</p><h2 id="lifestyle-title">Elevating <em>your lifestyle.</em></h2><span>Thoughtfully engineered elevators that bring effortless movement, comfort and distinction to every space.</span><div><a className="editorial-cta" href="/contact">Contact Us <span aria-hidden="true"><LuArrowRight /></span></a><a className="editorial-cta" href="#about">Learn More <span aria-hidden="true"><LuArrowRight /></span></a></div></header><div className="lifestyle-images"><figure><img src="/images/glass-panoramic-elevator.png" alt="Panoramic glass elevator in a bright atrium" loading="lazy" /></figure><figure><img src="/images/elevator-lobby-luxe.png" alt="Premium residential elevator lobby" loading="lazy" /></figure><figure><img src="/images/walnut-elevator-cabin.png" alt="Warm walnut elevator cabin" loading="lazy" /></figure></div></section>
+}

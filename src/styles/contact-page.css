@@ -6,4 +6,69 @@
 .contact-inquiry{scroll-margin-top:104px}
 .contact-inquiry>header{top:112px}
 
+/* Blue inquiry panel with accessible white-and-gold form contrast. */
+.contact-inquiry form{border:1px solid rgba(255,255,255,.1);background:#0F2B45;color:#fff}
+.contact-inquiry label,.contact-inquiry legend{color:#fff}
+.contact-inquiry input,.contact-inquiry textarea{border-bottom-color:rgba(235,155,52,.75);color:#fff;caret-color:#EB9B34}
+.contact-inquiry input::placeholder,.contact-inquiry textarea::placeholder{color:rgba(255,255,255,.48)}
+.contact-inquiry input:focus,.contact-inquiry textarea:focus{border-color:#fff}
+.project-types button{border-color:rgba(235,155,52,.85);color:#fff}
+.project-types button:hover{border-color:#EB9B34;background:rgba(235,155,52,.1)}
+.project-types button.selected{border-color:#EB9B34;background:#EB9B34;color:#0F2B45}
+.form-submit p{color:rgba(255,255,255,.66)}
+.form-submit p a{color:#EB9B34;text-underline-offset:3px}
+.contact-success h3{color:#fff}
+.contact-success p{color:rgba(255,255,255,.7)}
+.contact-success i{background:#EB9B34;color:#0F2B45}
+
+/* Premium direct-contact cards. */
+.contact-direct{gap:18px;padding:26px;border:0;background:#F8F7F1}
+.contact-direct article{position:relative;min-height:285px;justify-content:flex-end;padding:42px;border:1px solid transparent;border-radius:28px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.contact-direct article:hover{transform:translateY(-5px);box-shadow:0 22px 50px rgba(15,43,69,.12)}
+.contact-direct article>svg{box-sizing:content-box;width:25px;height:25px;margin-bottom:auto;padding:14px;border-radius:50%}
+.contact-direct article>p{margin:26px 0 9px}
+.contact-direct article>a,.contact-direct article>strong{font-size:clamp(22px,2vw,29px);line-height:1.2}
+.contact-direct article>span{margin-top:14px;font-size:13px}
+.contact-direct article:nth-child(1){background:#0F2B45;color:#fff}
+.contact-direct article:nth-child(1)>svg{background:#EB9B34;color:#0F2B45}
+.contact-direct article:nth-child(1)>p{color:#EB9B34}
+.contact-direct article:nth-child(1)>a{color:#fff}
+.contact-direct article:nth-child(1)>span{color:rgba(255,255,255,.7)}
+.contact-direct article:nth-child(2){background:#EB9B34;color:#0F2B45}
+.contact-direct article:nth-child(2)>svg{background:#0F2B45;color:#EB9B34}
+.contact-direct article:nth-child(2)>p,.contact-direct article:nth-child(2)>a,.contact-direct article:nth-child(2)>span{color:#0F2B45}
+.contact-direct article:nth-child(2)>span{opacity:.72}
+.contact-direct article:nth-child(3){border-color:rgba(15,43,69,.24);background:#fff;color:#0F2B45;box-shadow:0 12px 34px rgba(15,43,69,.08)}
+.contact-direct article:nth-child(3)>svg{background:#0F2B45;color:#EB9B34}
+.contact-direct article:nth-child(3)>p{color:#EB9B34}
+.contact-direct article:nth-child(3)>span{color:rgba(15,43,69,.68)}
+.contact-direct article{cursor:pointer}
+.contact-direct__hit{position:absolute;inset:0;z-index:4;border-radius:inherit;font-size:0!important}
+.contact-direct article:has(.contact-direct__hit:focus-visible){outline:3px solid #EB9B34;outline-offset:3px}
+
+/* One-time, staggered process reveal on viewport entry. */
+.contact-process-reveal header>p,
+.contact-process-reveal header>h2,
+.contact-process-reveal article{opacity:0;transform:translateY(28px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}
+.contact-process-reveal header>p{transform:translateY(16px);transition-delay:.04s}
+.contact-process-reveal header>h2{transition-delay:.14s}
+.contact-process-reveal article:nth-child(1){transition-delay:.28s}
+.contact-process-reveal article:nth-child(2){transition-delay:.42s}
+.contact-process-reveal article:nth-child(3){transition-delay:.56s}
+.contact-process-reveal article:nth-child(4){transition-delay:.70s}
+.contact-process-reveal.is-visible header>p,
+.contact-process-reveal.is-visible header>h2,
+.contact-process-reveal.is-visible article{opacity:1;transform:translateY(0)}
+
+@media(prefers-reduced-motion:reduce){
+  .contact-process-reveal header>p,
+  .contact-process-reveal header>h2,
+  .contact-process-reveal article{opacity:1;transform:none;transition:none}
+}
+
+/* Clear FAQ navigation and blue accordion dividers. */
+.contact-faq>header .editorial-cta{margin-top:34px}
+.contact-faq>div{border-top-color:rgba(15,43,69,.42)}
+.contact-faq article{border-bottom-color:rgba(15,43,69,.32)}
+
 @media(max-width:950px){.contact-inquiry>header{top:auto}}

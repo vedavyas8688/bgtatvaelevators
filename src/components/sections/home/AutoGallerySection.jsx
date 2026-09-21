@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { galleryImages } from '../../data/galleryData'
+import { galleryImages } from '../../../data/galleryData'
 
 export default function AutoGallerySection() {
   const [active, setActive] = useState(0)

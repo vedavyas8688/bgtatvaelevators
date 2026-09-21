@@ -1,10 +1,12 @@
 {
-  "name": "hirola-elevators",
+  "name": "bg-tatva-elevators",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port 5188 --strictPort",
+    "generate:seo": "node scripts/generate-seo-files.mjs",
+    "prebuild": "npm run generate:seo",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"

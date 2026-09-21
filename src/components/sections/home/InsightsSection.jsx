@@ -1,0 +1,9 @@
+import { LuArrowRight } from 'react-icons/lu'
+import { latestArticles } from '../../../data/blogPosts'
+
+const Arrow = ({ className = '' }) => <span className={className} aria-hidden="true"><LuArrowRight /></span>
+
+export default function InsightsSection() {
+  const [primaryArticle, imageArticle, secondaryArticle] = latestArticles.slice(0, 3)
+  return <section className="insights-section" aria-labelledby="insights-title"><header><h2 id="insights-title">Updated Insight</h2><span>Our latest articles provide useful insights, keeping you up to date on the ever-changing world of vertical mobility.</span></header><div className="insights-grid"><a className="insight-card insight-main" href={primaryArticle.href} aria-label={`Read ${primaryArticle.title}`}><div className="insight-meta"><i>{primaryArticle.initials}</i><span><b>{primaryArticle.author}</b><small>{primaryArticle.date}</small></span></div><div className="insight-image-wrap"><img src={primaryArticle.image} alt={primaryArticle.title} loading="lazy" /><Arrow className="insight-arrow" /></div><h3>{primaryArticle.title}</h3><p>{primaryArticle.excerpt}</p></a><a className="insight-wide" href={imageArticle.href} aria-label={`Read ${imageArticle.title}`}><img src={imageArticle.image} alt={imageArticle.title} loading="lazy" /><Arrow className="insight-arrow" /><span className="insight-wide-caption"><small>{imageArticle.category} · {imageArticle.date}</small><b>{imageArticle.title}</b></span></a><a className="insight-card insight-secondary" href={secondaryArticle.href} aria-label={`Read ${secondaryArticle.title}`}><div className="insight-meta"><i>{secondaryArticle.initials}</i><span><b>{secondaryArticle.author}</b><small>{secondaryArticle.date}</small></span></div><h3>{secondaryArticle.title}</h3><p>{secondaryArticle.excerpt}</p></a><a className="more-blogs" href="/blog"><span>More Blogs</span><Arrow /></a></div></section>
+}

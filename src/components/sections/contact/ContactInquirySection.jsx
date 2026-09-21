@@ -1,0 +1,11 @@
+import { useState } from 'react'
+import { LuArrowRight, LuCheck } from 'react-icons/lu'
+
+const projectTypes = ['Home Elevator', 'Commercial', 'Modernisation', 'Cabin Design']
+
+export default function ContactInquirySection() {
+  const [selectedType, setSelectedType] = useState('Home Elevator')
+  const [submitted, setSubmitted] = useState(false)
+  const submit = (event) => { event.preventDefault(); setSubmitted(true) }
+  return <section id="inquiry" className="contact-inquiry"><header><p>Project inquiry</p><h2>Tell us about<br />your vision.</h2><span>A few thoughtful details help our team understand your project and prepare a useful first conversation.</span></header><form onSubmit={submit}>{submitted ? <div className="contact-success"><i><LuCheck /></i><h3>Thank you.</h3><p>Your project brief is ready for our team. We&apos;ll be in touch shortly.</p><button className="editorial-cta editorial-cta--light" type="button" onClick={() => setSubmitted(false)}>Send another inquiry <span aria-hidden="true"><LuArrowRight /></span></button></div> : <><div className="form-row"><label>Full name<input required name="name" placeholder="Your name" /></label><label>Email address<input required type="email" name="email" placeholder="name@company.com" /></label></div><div className="form-row"><label>Phone number<input name="phone" type="tel" placeholder="+91" /></label><label>Project location<input name="location" placeholder="City, State" /></label></div><fieldset><legend>What can we help with?</legend><div className="project-types">{projectTypes.map((type) => <button key={type} type="button" className={selectedType === type ? 'selected' : ''} onClick={() => setSelectedType(type)}>{type}{selectedType === type && <LuCheck />}</button>)}</div></fieldset><label>Tell us about the project<textarea required name="message" placeholder="Project type, building stage, number of floors, preferred timeline or anything else useful…" /></label><div className="form-submit"><p>By submitting, you agree to our <a href="/privacy">Privacy Policy</a>.</p><button className="editorial-cta editorial-cta--light" type="submit">Send inquiry <span aria-hidden="true"><LuArrowRight /></span></button></div></>}</form></section>
+}

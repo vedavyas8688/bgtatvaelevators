@@ -7,14 +7,27 @@ import Projects from './pages/Projects'
 import Elevators from './pages/Elevators'
 import About from './pages/About'
 import Privacy from './pages/Privacy'
+import SeoMetadata from './components/SeoMetadata'
+import { getSeoPageKey } from './data/seoData'
 
 export default function App() {
-  if (window.location.pathname === '/blog/elevators-modern-architecture') return <BlogDetail />
-  if (window.location.pathname.startsWith('/contact')) return <Contact />
-  if (window.location.pathname.startsWith('/faq')) return <Faq />
-  if (window.location.pathname.startsWith('/projects')) return <Projects />
-  if (window.location.pathname.startsWith('/elevators')) return <Elevators />
-  if (window.location.pathname.startsWith('/about')) return <About />
-  if (window.location.pathname.startsWith('/privacy')) return <Privacy />
-  return window.location.pathname.startsWith('/blog') ? <Blog /> : <Home />
+  const path = window.location.pathname
+  const seoPageKey = getSeoPageKey(path)
+  let page = <Home />
+
+  if (path === '/blog/elevators-modern-architecture') page = <BlogDetail />
+  else if (path.startsWith('/contact')) page = <Contact />
+  else if (path.startsWith('/faq')) page = <Faq />
+  else if (path.startsWith('/projects')) page = <Projects />
+  else if (path.startsWith('/elevators')) page = <Elevators />
+  else if (path.startsWith('/about')) page = <About />
+  else if (path.startsWith('/privacy')) page = <Privacy />
+  else if (path.startsWith('/blog')) page = <Blog />
+
+  return (
+    <>
+      <SeoMetadata pageKey={seoPageKey} />
+      {page}
+    </>
+  )
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { aboutTabs } from '../../data/aboutData'
+import { aboutTabs } from '../../../data/aboutData'
 import { LuArrowRight } from 'react-icons/lu'
 
 export default function AboutSection() {

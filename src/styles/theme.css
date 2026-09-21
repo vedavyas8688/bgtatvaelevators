@@ -131,3 +131,94 @@ main section.bg-\[\#F5F3EC\],
     grid-template-columns: 1fr;
   }
 }
+
+/* Shared editorial CTA: a text action, never a rounded pill. */
+.editorial-cta {
+  position: relative;
+  display: inline-flex !important;
+  width: max-content !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  padding: 0 0 9px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--color-blue) !important;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .25s ease !important;
+}
+
+.editorial-cta::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 48px;
+  height: 1px;
+  background: currentColor;
+  content: '';
+  transition: width .28s ease;
+}
+
+.editorial-cta:hover::after,
+.editorial-cta:focus-visible::after {
+  width: 68px;
+}
+
+.editorial-cta svg {
+  display: block;
+  flex: none;
+  width: 17px;
+  height: 17px;
+  transform: rotate(-45deg);
+  transition: transform .25s ease;
+}
+
+.editorial-cta b {
+  color: inherit !important;
+}
+
+.editorial-cta:hover svg,
+.editorial-cta:focus-visible svg {
+  transform: translate(3px, -3px) rotate(-45deg);
+}
+
+.editorial-cta--light {
+  color: #FFFFFF !important;
+}
+
+.editorial-cta--center {
+  align-self: center !important;
+}
+
+/* These home CTAs already use the same editorial language. */
+.home-signature .home-addition-link {
+  padding: 0 0 9px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-blue);
+}
+
+.home-signature .home-addition-link::after {
+  display: block;
+}
+
+.home-signature .home-addition-link:hover {
+  border-color: transparent;
+  background: transparent;
+  color: var(--color-blue);
+}
+
+@media (max-width: 767px) {
+  .site-navbar-cta.editorial-cta {
+    display: none !important;
+  }
+}
