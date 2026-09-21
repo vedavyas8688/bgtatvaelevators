@@ -89,3 +89,13 @@
   .home-signature__visual-label,
   .home-signature__content-stack>.home-signature__content{transition:none}
 }
+
+.home-compare__divider svg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 22px;
+  height: 22px;
+  color: var(--ha-blue);
+  stroke-width: 2.4;
+}

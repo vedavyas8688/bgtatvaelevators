@@ -2,7 +2,7 @@ import { cabinStyles } from './elevatorsData'
 
 export default function CabinStylesSection() {
   return (
-    <section className="bg-[#0F2B45] px-4 py-16 text-white sm:px-[clamp(20px,5vw,76px)] sm:py-[clamp(85px,9vw,140px)]">
+    <section id="cabin-design" className="scroll-mt-[104px] bg-[#0F2B45] px-4 py-16 text-white sm:px-[clamp(20px,5vw,76px)] sm:py-[clamp(85px,9vw,140px)]">
       <header className="mx-auto max-w-[800px] text-center">
         <p className="m-0 text-[10px] font-semibold uppercase tracking-[.2em] text-[#EB9B34] sm:text-[11px]">
           Cabin design

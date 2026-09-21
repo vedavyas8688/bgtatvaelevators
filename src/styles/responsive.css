@@ -28,7 +28,7 @@
   }
 
   /* Home hero */
-  #home > img {
+  .home-hero__poster img {
     object-fit: cover;
     object-position: 58% center;
   }
@@ -107,6 +107,193 @@
   }
 }
 
+/* Compact mobile section rhythm across the complete website. */
+@media (max-width: 767px) {
+  /* Home */
+  .auto-gallery,
+  .home-resources,
+  .home-modernisation,
+  .home-signature,
+  .metrics-section,
+  .insights-section,
+  .social-section {
+    margin-block: 0;
+  }
+
+  .auto-gallery,
+  .home-resources,
+  .home-modernisation,
+  .home-signature,
+  .metrics-section,
+  .insights-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .lifestyle-section {
+    padding-top: 56px;
+  }
+
+  .services-mobile {
+    gap: 48px;
+    padding: 56px 18px 64px;
+  }
+
+  .home-page > section[aria-labelledby='elevator-explorer-title'] {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  /* About */
+  .about-page > section:nth-of-type(2),
+  .about-page > section:nth-of-type(5),
+  .about-page > section:nth-of-type(6),
+  .about-page > section:nth-of-type(9) {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .about-page > section:nth-of-type(8) {
+    min-height: 0;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .about-design-section,
+  .about-page > section:last-of-type {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  /* Elevators */
+  .elevators-page > section:nth-of-type(2),
+  .elevators-page > section:nth-of-type(3),
+  .elevators-page > section:nth-of-type(4) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .elevators-page > section:nth-of-type(5) > div {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .elevators-page > section:nth-of-type(6) {
+    min-height: 400px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  /* Projects */
+  .projects-page > section:nth-of-type(1) {
+    padding-bottom: 56px;
+  }
+
+  .projects-page > section:nth-of-type(3),
+  .projects-page > section:nth-of-type(5) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .projects-page > section:nth-of-type(4) article {
+    min-height: 210px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .projects-page > section:nth-of-type(6) {
+    min-height: 400px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  /* FAQs */
+  .faq-page > section:first-of-type {
+    min-height: 460px;
+    padding-top: 112px;
+    padding-bottom: 52px;
+  }
+
+  .faq-page > section:nth-of-type(2) {
+    gap: 36px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .faq-page > section:nth-of-type(3) {
+    min-height: 380px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  /* Blog */
+  .blog-banner {
+    padding-top: 112px;
+    padding-bottom: 56px;
+  }
+
+  .blog-library,
+  .blog-cta {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  /* Contact */
+  .contact-hero-copy {
+    min-height: 0;
+    padding: 116px 20px 42px;
+  }
+
+  .contact-hero > figure {
+    height: 410px;
+    margin-bottom: 0;
+  }
+
+  .contact-inquiry {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .contact-inquiry > header,
+  .contact-faq > header {
+    margin-bottom: 26px;
+  }
+
+  .contact-inquiry form {
+    padding: 24px 18px;
+  }
+
+  .contact-direct {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .contact-direct article {
+    min-height: 180px;
+    padding: 30px 20px;
+  }
+
+  .contact-process,
+  .contact-faq {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .contact-visit > figure {
+    height: 390px;
+  }
+
+  .contact-visit > div {
+    padding: 56px 20px;
+  }
+
+  .contact-final {
+    min-height: 400px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
 @media (max-width: 767px) {
   /* Shared navigation remains usable at narrow widths. */
   .site-navbar {
@@ -129,8 +316,8 @@
     min-height: 680px;
   }
 
-  #home > img {
-    object-position: 63% center;
+  .home-hero__poster img {
+    object-position: center;
   }
 
   .home-hero__content {
@@ -1347,7 +1534,8 @@
   }
 
   .blog-banner-feature h2 {
-    font-size: 30px;
+    font-size: 27px;
+    line-height: 1.12;
   }
 
   .blog-library {
@@ -1688,4 +1876,123 @@
   .footer-columns > div:last-child {
     grid-column: auto;
   }
+}
+
+/* Final mobile rhythm: intentionally last so legacy page rules cannot add large gaps back. */
+@media (max-width: 767px) {
+  .home-page > .auto-gallery,
+  .home-page > .auto-gallery .gallery-stage {
+    min-height: 795px;
+  }
+
+  .home-page > .auto-gallery {
+    padding-bottom: 0;
+  }
+
+  .home-page > .about-section {
+    padding-top: 20px;
+  }
+
+  .auto-gallery,
+  .home-resources,
+  .home-modernisation,
+  .home-signature,
+  .metrics-section,
+  .insights-section,
+  .home-page > section[aria-labelledby='elevator-explorer-title'] {
+    margin-block: 0;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .lifestyle-section { padding-top: 56px; }
+  .services-mobile { gap: 48px; padding: 56px 18px 64px; }
+
+  .about-page > section:nth-of-type(2),
+  .about-page > section:nth-of-type(5),
+  .about-page > section:nth-of-type(6),
+  .about-page > section:nth-of-type(9),
+  .about-design-section,
+  .about-page > section:last-of-type {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .about-page > section:nth-of-type(8) {
+    min-height: 0;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .elevators-page > section:nth-of-type(2),
+  .elevators-page > section:nth-of-type(3),
+  .elevators-page > section:nth-of-type(4) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .elevators-page > section:nth-of-type(5) > div {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .elevators-page > section:nth-of-type(6),
+  .projects-page > section:nth-of-type(6) {
+    min-height: 400px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .projects-page > section:nth-of-type(1) { padding-bottom: 56px; }
+  .projects-page > section:nth-of-type(3),
+  .projects-page > section:nth-of-type(5) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .projects-page > section:nth-of-type(4) article {
+    min-height: 210px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .faq-page > section:first-of-type {
+    min-height: 460px;
+    padding-top: 112px;
+    padding-bottom: 52px;
+  }
+
+  .faq-page > section:nth-of-type(2) {
+    gap: 36px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .faq-page > section:nth-of-type(3) {
+    min-height: 380px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .blog-banner { padding-top: 112px; padding-bottom: 56px; }
+  .blog-library,
+  .blog-cta { padding-top: 56px; padding-bottom: 56px; }
+
+  .contact-hero-copy {
+    min-height: 0;
+    padding: 116px 20px 42px;
+  }
+
+  .contact-hero > figure { height: 410px; margin-bottom: 0; }
+  .contact-inquiry { padding-top: 54px; padding-bottom: 54px; }
+  .contact-inquiry > header,
+  .contact-faq > header { margin-bottom: 26px; }
+  .contact-inquiry form { padding: 24px 18px; }
+  .contact-direct { gap: 12px; padding: 14px; }
+  .contact-direct article { min-height: 180px; padding: 30px 20px; }
+  .contact-process,
+  .contact-faq { padding-top: 56px; padding-bottom: 56px; }
+  .contact-visit > figure { height: 390px; }
+  .contact-visit > div { padding: 56px 20px; }
+  .contact-final { min-height: 400px; padding-top: 56px; padding-bottom: 56px; }
 }

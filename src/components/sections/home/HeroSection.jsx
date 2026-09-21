@@ -36,12 +36,15 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="home-hero relative h-[100svh] min-h-[680px] w-full overflow-hidden bg-brand-charcoal">
-      <img
-        src="/images/hero-background.png"
-        alt="Glass elevator in a contemporary architectural atrium"
-        fetchPriority="high"
-        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${isPlaying ? 'opacity-0' : 'opacity-100'}`}
-      />
+      <picture className={`home-hero__poster absolute inset-0 block size-full transition-opacity duration-1000 ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
+        <source media="(max-width: 767px)" srcSet="/images/hero-mobile-v2.png" />
+        <img
+          src="/images/hero-background.png"
+          alt="Glass elevator in a contemporary architectural atrium"
+          fetchPriority="high"
+          className="size-full object-cover"
+        />
+      </picture>
       <video
         ref={videoRef}
         className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${isPlaying ? 'opacity-100' : 'opacity-0'}`}
@@ -71,7 +74,7 @@ export default function HeroSection() {
               </span>
               <span className="text-[16px]">{isPlaying ? 'Pause Video' : 'Play Video'}</span>
             </button>
-            <a href="/contact" className="home-hero__contact group inline-flex min-h-[50px] items-center gap-3 rounded-full bg-brand-gold px-6 py-3 text-[15px] font-semibold text-brand-blue transition-colors duration-300 hover:bg-brand-white">
+            <a href="/contact" className="home-hero__contact group inline-flex min-h-[50px] items-center gap-3 rounded-full border border-brand-gold bg-brand-gold px-6 py-3 text-[15px] font-semibold text-brand-blue shadow-[0_10px_28px_rgba(15,43,69,.16)] transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-blue hover:bg-brand-blue hover:text-brand-white hover:shadow-[0_14px_34px_rgba(15,43,69,.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold">
               <span>Contact Us</span>
               <LuArrowUpRight className="size-5 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" aria-hidden="true" />
             </a>

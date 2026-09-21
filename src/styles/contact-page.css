@@ -2,6 +2,50 @@
 @media(max-width:950px){.contact-nav>div{display:none}.contact-nav-action{margin-left:auto}.contact-hero{grid-template-columns:1fr}.contact-hero-copy{min-height:680px}.contact-hero>figure{height:680px;margin:0 18px 18px}.contact-inquiry{grid-template-columns:1fr}.contact-inquiry>header{position:static;margin-bottom:50px}.contact-direct{grid-template-columns:1fr}.contact-direct article{border-right:0;border-bottom:1px solid #F5F3EC}.contact-process>div{grid-template-columns:1fr 1fr}.contact-process article:nth-child(2){border-right:0}.contact-visit{grid-template-columns:1fr}.contact-visit>figure{height:650px}.contact-faq{grid-template-columns:1fr}.contact-faq>header{margin-bottom:50px}.contact-footer{grid-template-columns:1fr auto}.contact-footer>div:nth-child(2){display:none}}
 @media(max-width:600px){.contact-nav{top:8px;width:calc(100% - 20px);height:68px;padding:0 12px}.contact-logo img{width:126px;height:54px}.contact-nav-action{padding:10px 13px;font-size:11px}.contact-hero-copy{min-height:620px;padding:125px 22px 60px}.contact-hero h1{font-size:58px}.contact-hero-copy>span{font-size:15px}.contact-hero>figure{height:520px;min-height:0;margin:0 10px 10px;border-radius:24px}.contact-hero figcaption{right:14px;bottom:14px;min-width:0}.contact-inquiry{padding:80px 16px}.contact-inquiry form{min-height:0;padding:28px 20px;border-radius:22px}.form-row{grid-template-columns:1fr;gap:22px}.project-types button{padding:10px 12px}.form-submit{align-items:flex-start;flex-direction:column}.contact-direct article{min-height:220px;padding:38px 24px}.contact-process{padding:85px 20px}.contact-process>div{grid-template-columns:1fr;margin-top:55px}.contact-process article,.contact-process article:not(:first-child){min-height:230px;padding:30px 0;border-right:0;border-bottom:1px solid #F8F7F11F}.contact-visit>figure{height:450px}.contact-visit>div{padding:72px 22px}.contact-faq{padding:85px 20px}.contact-faq button{font-size:16px}.contact-final{min-height:500px}.contact-footer{grid-template-columns:1fr;padding:44px 20px 22px}.contact-socials{justify-self:start}.contact-credit{margin-top:12px}}
 
+/* Balanced desktop typography for the hero and consultation sections. */
+@media (min-width: 951px) {
+  .contact-hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-hero-copy {
+    padding-right: clamp(38px, 5vw, 82px);
+    padding-left: clamp(38px, 5vw, 82px);
+  }
+
+  .contact-hero h1 {
+    max-width: 680px;
+    font-size: clamp(66px, 6vw, 94px);
+    line-height: .9;
+    letter-spacing: -.05em;
+  }
+
+  .contact-visit {
+    grid-template-columns: .9fr 1.1fr;
+  }
+
+  .contact-visit > div {
+    padding-right: clamp(40px, 5vw, 80px);
+    padding-left: clamp(40px, 5vw, 80px);
+  }
+
+  .contact-visit h2 {
+    max-width: 720px;
+    font-size: clamp(48px, 4.4vw, 68px);
+    line-height: .98;
+  }
+
+  .contact-visit > div > span {
+    max-width: 620px;
+  }
+}
+
+.contact-hero figcaption {
+  border-color: rgba(235, 155, 52, .45);
+  background: #0F2B45;
+  backdrop-filter: none;
+}
+
 /* Keep the inquiry introduction aligned below the shared fixed navigation. */
 .contact-inquiry{scroll-margin-top:104px}
 .contact-inquiry>header{top:112px}

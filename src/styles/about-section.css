@@ -14,7 +14,7 @@
   justify-self: center;
   margin: 46px 0 0;
   color: #0F2B45;
-  font: 500 clamp(56px, 5.4vw, 82px)/1 'Jost', sans-serif;
+  font: 500 clamp(56px, 5.4vw, 82px)/1 'Outfit', sans-serif;
   letter-spacing: -.04em;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -41,7 +41,7 @@
   border: 0;
   background: transparent;
   color: #0F2B45;
-  font: 600 clamp(20px, 2vw, 29px)/1 'Jost', sans-serif;
+  font: 600 clamp(20px, 2vw, 29px)/1 'Outfit', sans-serif;
   cursor: pointer;
 }
 
@@ -110,7 +110,7 @@
   animation: about-spin 14s linear infinite !important;
 }
 
-.about-action text { fill: #0F2B45; font: 500 9.5px Jost, sans-serif; letter-spacing: 1.1px; }
+.about-action text { fill: #0F2B45; font: 500 9.5px 'Outfit', sans-serif; letter-spacing: 1.1px; }
 .about-action > .about-action-arrow {
   position: absolute;
   top: 50%;

@@ -35,7 +35,7 @@
 .gallery-heading h2 {
   margin: 0;
   color: #0F2B45;
-  font: 500 clamp(48px, 4.8vw, 76px)/.95 'Jost', sans-serif;
+  font: 500 clamp(48px, 4.8vw, 76px)/.95 'Outfit', sans-serif;
   letter-spacing: -.035em;
 }
 
