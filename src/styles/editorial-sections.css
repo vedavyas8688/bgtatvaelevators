@@ -57,8 +57,8 @@
 }
 
 .social-set a{box-shadow:none}
-.social-collage{animation-duration:24s}
-@media(max-width:560px){.social-collage{animation-duration:20s}}
+.social-collage{animation-duration:16s}
+@media(max-width:560px){.social-collage{animation-duration:12s}}
 .footer-bottom{display:flex;align-items:center;justify-content:center;gap:8px 18px;flex-wrap:wrap;text-align:center}
 .footer-bottom a{color:#0F2B45;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:640px){.footer-bottom{flex-direction:column;gap:8px;text-align:center}}

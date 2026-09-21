@@ -787,12 +787,34 @@
   }
 
   .lifestyle-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
     margin-top: 38px;
   }
 
+  .lifestyle-images figure,
+  .lifestyle-images figure:first-child,
+  .lifestyle-images figure:last-child {
+    display: block;
+    height: 170px;
+    border-radius: 16px;
+  }
+
   .lifestyle-images figure:nth-child(2) {
-    height: 390px;
-    border-radius: 22px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: 310px;
+    border-radius: 20px;
+  }
+
+  .lifestyle-images figure:first-child,
+  .lifestyle-images figure:last-child {
+    grid-row: 2;
+  }
+
+  .lifestyle-images figure:first-child img,
+  .lifestyle-images figure:last-child img {
+    object-position: center;
   }
 
   .metrics-section {
@@ -855,10 +877,27 @@
 
   .more-blogs {
     height: 70px;
+    padding: 0 56px 0 24px;
   }
 
-  .more-blogs span {
+  .more-blogs > span:first-child {
     font-size: 18px;
+    writing-mode: initial;
+    transform: none;
+  }
+
+  .more-blogs > span + span {
+    top: 50%;
+    right: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 21px;
+    transform: translateY(-50%);
+    writing-mode: initial;
+  }
+
+  .more-blogs:hover > span + span {
+    transform: translate(3px, -50%);
   }
 
   .social-section {
@@ -1526,6 +1565,36 @@
 
   .footer-columns > div:last-child {
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 18px;
+    align-items: start;
+  }
+
+  .footer-columns > div:last-child h3:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .footer-columns > div:last-child a:first-of-type {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .footer-columns > div:last-child h3:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
+  }
+
+  .footer-columns > div:last-child a:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .footer-columns > div:last-child a {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   .footer-columns h3 {
