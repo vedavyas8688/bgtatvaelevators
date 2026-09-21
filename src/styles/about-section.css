@@ -167,3 +167,76 @@
   .about-action > svg { animation: about-spin 28s linear infinite !important; }
   .about-action::after { animation: about-ring-spin 36s linear infinite !important; }
 }
+
+/* About design: one reveal language across desktop, tablet and mobile. */
+.about-design__intro,
+.about-design__visual,
+.about-design__statement {
+  opacity: 0;
+  transform: translateY(42px);
+  transition: opacity .8s ease, transform .9s cubic-bezier(.16, 1, .3, 1);
+}
+
+.about-design__visual { transform: translateY(48px) scale(.975); }
+.about-design__visual img {
+  transform: scale(1.06);
+  transition: transform 1.15s cubic-bezier(.16, 1, .3, 1);
+}
+
+.about-design-section.is-visible .about-design__intro,
+.about-design-section.is-visible .about-design__visual,
+.about-design-section.is-visible .about-design__statement {
+  opacity: 1;
+  transform: none;
+}
+
+.about-design-section.is-visible .about-design__visual img { transform: scale(1); }
+.about-design__visual--one { transition-delay: .12s; }
+.about-design__visual--two { transition-delay: .25s; }
+.about-design__statement { transition-delay: .38s; }
+
+@media (max-width: 767px) {
+  .about-design-section {
+    display: block;
+    min-height: 0;
+    padding: 68px 16px 74px;
+  }
+
+  .about-design__intro { margin-bottom: 32px; }
+  .about-design__intro h2 { font-size: clamp(38px, 11vw, 50px); line-height: 1; }
+  .about-design__intro > p:last-child {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .about-design__gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .about-design__visual,
+  .about-design__visual--one,
+  .about-design__visual--two {
+    height: clamp(300px, 112vw, 430px);
+    margin-top: 0;
+    border-radius: 20px;
+  }
+
+  .about-design__visual--two { height: clamp(260px, 96vw, 380px); }
+  .about-design__statement { padding: 30px 24px; border-radius: 20px; }
+  .about-design__statement h3 { margin-top: 22px; font-size: 27px; }
+  .about-design__statement p { font-size: 14px; line-height: 1.65; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-design__intro,
+  .about-design__visual,
+  .about-design__statement,
+  .about-design__visual img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

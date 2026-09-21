@@ -133,6 +133,16 @@
     object-position: 63% center;
   }
 
+  .home-hero__content {
+    top: 32%;
+    right: 20px;
+    left: 20px;
+  }
+
+  .home-hero__baseline {
+    display: none;
+  }
+
   #home > div:last-child {
     top: auto;
     right: 20px;
@@ -1479,6 +1489,34 @@
   .form-submit button {
     justify-content: center;
     width: 100%;
+  }
+
+  .contact-inquiry .form-submit {
+    display: grid;
+    width: 100%;
+    gap: 18px;
+    margin-top: 28px;
+  }
+
+  .contact-inquiry .form-submit > p {
+    max-width: none;
+    color: rgba(255, 255, 255, .72);
+    font-size: 10px;
+    line-height: 1.55;
+  }
+
+  .contact-inquiry .form-submit > button.editorial-cta {
+    width: 100% !important;
+    min-height: 46px !important;
+    justify-content: center !important;
+    padding: 13px 18px !important;
+    border-radius: 12px !important;
+    background: #EB9B34 !important;
+    color: #0F2B45 !important;
+  }
+
+  .contact-inquiry .form-submit > button.editorial-cta::after {
+    display: none;
   }
 
   .contact-direct article {

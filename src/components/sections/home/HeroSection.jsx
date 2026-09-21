@@ -56,7 +56,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,43,69,.96)_0%,rgba(15,43,69,.72)_31%,rgba(15,43,69,.08)_63%,rgba(15,43,69,.2)_100%)]" />
       <SiteNavbar />
 
-      <div className="absolute left-[5.7%] top-[29.5%] z-10">
+      <div className="home-hero__content absolute left-[5.7%] top-[29.5%] z-10">
         <div className="max-w-[560px]">
           <h1 className="font-display text-[clamp(4.2rem,5.7vw,6rem)] font-medium leading-[.87] tracking-[-.035em] text-brand-white">
             <span className="block">An</span>
