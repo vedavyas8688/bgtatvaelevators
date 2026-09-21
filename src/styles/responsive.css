@@ -1994,4 +1994,8 @@
   .contact-visit > figure { height: 390px; }
   .contact-visit > div { padding: 56px 20px; }
   .contact-final { min-height: 400px; padding-top: 56px; padding-bottom: 56px; }
+
+  .home-page > .social-section {
+    padding-top: 20px;
+  }
 }
