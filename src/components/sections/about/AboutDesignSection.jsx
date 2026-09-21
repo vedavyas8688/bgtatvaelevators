@@ -33,10 +33,10 @@ export default function AboutDesignSection() {
 
       <div className="about-design__gallery grid gap-5 sm:grid-cols-2">
         <figure className="about-design__visual about-design__visual--one m-0 h-[540px] overflow-hidden rounded-[28px] sm:mt-16">
-          <img src="/images/walnut-elevator-cabin.png" alt="Walnut elevator cabin detail" loading="lazy" className="size-full object-cover" />
+          <img src="/images/walnut-elevator-cabin.webp" alt="Walnut elevator cabin detail" loading="lazy" className="size-full object-cover" />
         </figure>
         <figure className="about-design__visual about-design__visual--two m-0 h-[540px] overflow-hidden rounded-[28px]">
-          <img src="/images/cabin-ivory.png" alt="Ivory elevator cabin detail" loading="lazy" className="size-full object-cover" />
+          <img src="/images/cabin-ivory.webp" alt="Ivory elevator cabin detail" loading="lazy" className="size-full object-cover" />
         </figure>
         <article className="about-design__statement rounded-[28px] bg-[#0F2B45] p-[clamp(28px,5vw,58px)] text-[#F8F7F1] sm:col-span-2">
           <LuSparkles className="size-7 text-[#EB9B34]" />

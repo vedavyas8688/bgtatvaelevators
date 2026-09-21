@@ -22,7 +22,7 @@ export default function AboutPartnershipSection() {
           <h3 className="relative m-0 max-w-[680px] text-[clamp(40px,3.8vw,60px)] font-medium leading-[.98] tracking-[-.045em]">Different expertise moves in one clear direction.</h3>
           <div className="relative grid items-end gap-6 border-t border-white/15 pt-6 sm:grid-cols-[1fr_180px]">
             <p className="m-0 max-w-[500px] text-[14px] leading-[1.7] text-white/60">We keep design, engineering and delivery in the same conversation, protecting the project’s intent from planning through handover.</p>
-            <figure className="m-0 h-[105px] overflow-hidden rounded-[16px]"><img src="/images/social-elevator-2.png" alt="Elevator detail representing collaborative project delivery" loading="lazy" className="size-full object-cover" /></figure>
+            <figure className="m-0 h-[105px] overflow-hidden rounded-[16px]"><img src="/images/social-elevator-2.webp" alt="Elevator detail representing collaborative project delivery" loading="lazy" className="size-full object-cover" /></figure>
           </div>
         </article>
 

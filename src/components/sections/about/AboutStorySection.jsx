@@ -1,7 +1,7 @@
 export default function AboutStorySection() {
   return (
     <section className="grid bg-[#0F2B45] text-white lg:grid-cols-[1.08fr_.92fr]">
-      <figure className="m-0 min-h-[660px] overflow-hidden max-lg:min-h-[460px] max-sm:min-h-[360px]"><img src="/images/elevator-lobby-luxe.png" alt="Elevator integrated into a premium architectural lobby" loading="lazy" className="size-full object-cover" /></figure>
+      <figure className="m-0 min-h-[660px] overflow-hidden max-lg:min-h-[460px] max-sm:min-h-[360px]"><img src="/images/elevator-lobby-luxe.webp" alt="Elevator integrated into a premium architectural lobby" loading="lazy" className="size-full object-cover" /></figure>
       <div className="flex flex-col justify-center px-[clamp(28px,4vw,68px)] py-[clamp(56px,6vw,96px)]">
         <span className="text-[72px] font-medium leading-none text-[#EB9B34]">10<sup className="text-[28px]">+</sup></span>
         <p className="mb-0 mt-3 text-[11px] uppercase tracking-[.18em] text-white/45">Years of experience</p>

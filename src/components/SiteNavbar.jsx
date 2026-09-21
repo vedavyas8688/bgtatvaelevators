@@ -40,7 +40,7 @@ export default function SiteNavbar() {
 
   return (
     <nav className={`site-navbar ${menuOpen ? 'is-menu-open' : ''}`} aria-label="Primary navigation">
-      <a href="/" className="site-navbar-logo"><img src="/images/bg-tatva-logo-transparent.png" alt="BG Tatva Elevators" /></a>
+      <a href="/" className="site-navbar-logo"><img src="/images/bg-tatva-logo-transparent.webp" alt="BG Tatva Elevators" /></a>
       <div className="site-navbar-links">
         {links.map(([label, href]) => <a key={label} href={href} aria-current={active(href) ? 'page' : undefined}>{label}</a>)}
       </div>

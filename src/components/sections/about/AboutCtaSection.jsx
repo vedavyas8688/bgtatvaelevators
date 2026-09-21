@@ -17,9 +17,10 @@ export default function AboutCtaSection() {
         </header>
 
         <div className="relative mt-8 sm:mt-[clamp(42px,5vw,72px)]">
-          <figure className="relative m-0 min-h-[410px] overflow-hidden rounded-[22px] border border-[#0F2B45]/10 bg-[#091F33] sm:min-h-[clamp(430px,52vw,690px)] sm:rounded-[clamp(24px,3vw,38px)]">
+          <figure className="relative m-0 min-h-[410px] overflow-hid  `-+
+          rounded-[22px] border border-[#0F2B45]/10 bg-[#091F33] sm:min-h-[clamp(430px,52vw,690px)] sm:rounded-[clamp(24px,3vw,38px)]">
             <img
-              src="/images/social-elevator-5.png"
+              src="/images/social-elevator-5.webp"
               alt="Panoramic glass elevator designed as part of a refined Bengaluru interior"
               loading="lazy"
               className="absolute inset-0 size-full object-cover"

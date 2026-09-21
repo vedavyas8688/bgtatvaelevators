@@ -12,7 +12,7 @@ export default function AboutHeroSection() {
         <a href="#about-introduction" className="inline-flex w-fit items-center gap-3 text-[12px] font-semibold uppercase tracking-[.12em]">Discover our approach <LuArrowDown /></a>
       </div>
       <figure className="relative m-3 ml-0 min-h-[520px] overflow-hidden rounded-[34px] lg:min-h-0 max-lg:m-3">
-        <img src="/images/social-elevator-3.png" alt="Panoramic elevator in a contemporary Bengaluru home" className="size-full object-cover" />
+        <img src="/images/social-elevator-3.webp" alt="Panoramic elevator in a contemporary Bengaluru home" className="size-full object-cover" />
         <figcaption className="absolute bottom-6 left-6 rounded-full bg-white/90 px-5 py-3 text-[11px] backdrop-blur-md">Architecture · Movement · Care</figcaption>
       </figure>
     </section>

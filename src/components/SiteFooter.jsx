@@ -13,7 +13,7 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-brand">
         <a href="/" aria-label="BG Tatva Elevators home">
-          <img src="/images/bg-tatva-logo-transparent.png" alt="BG Tatva Elevators" />
+          <img src="/images/bg-tatva-logo-transparent.webp" alt="BG Tatva Elevators" />
         </a>
       </div>
 

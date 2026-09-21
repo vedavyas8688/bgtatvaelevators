@@ -22,9 +22,9 @@ export default function ModernisationCompareSection() {
 
       <div className="home-modernisation__layout">
         <div className="home-compare" style={{ '--compare-position': `${position}%` }}>
-          <img className="home-compare__image" src="/images/modernisation-before-premium.png" alt="Dated beige elevator cabin before modernisation" />
+          <img className="home-compare__image" src="/images/modernisation-before-premium.webp" alt="Dated beige elevator cabin before modernisation" />
           <div className="home-compare__after">
-            <img className="home-compare__image" src="/images/modernisation-after-premium.png" alt="Premium walnut, ivory and bronze elevator cabin after modernisation" />
+            <img className="home-compare__image" src="/images/modernisation-after-premium.webp" alt="Premium walnut, ivory and bronze elevator cabin after modernisation" />
           </div>
           <span className="home-compare__label home-compare__label--before">Before</span>
           <span className="home-compare__label home-compare__label--after">After</span>

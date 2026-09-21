@@ -12,7 +12,7 @@ export default function ElevatorSupportSection() {
     <>
       <section id="maintenance" className="scroll-mt-[104px] grid bg-[#F5F3EC] lg:grid-cols-2">
         <figure className="m-0 min-h-[720px] overflow-hidden max-lg:min-h-[560px]">
-          <img src="/images/service-elevator-design.png" alt="Elevator design and planning detail" loading="lazy" className="size-full object-cover" />
+          <img src="/images/service-elevator-design.webp" alt="Elevator design and planning detail" loading="lazy" className="size-full object-cover" />
         </figure>
         <div className="flex flex-col justify-center px-[clamp(28px,7vw,110px)] py-[clamp(75px,10vw,140px)]">
           <p className="m-0 text-[11px] font-semibold uppercase tracking-[.2em] text-[#0F2B45]">More than the cabin</p>

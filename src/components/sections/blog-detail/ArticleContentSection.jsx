@@ -17,7 +17,7 @@ export default function ArticleContentSection() {
         <p>A well-located lift shortens travel paths, improves accessibility and creates a more intuitive relationship between floors. In a residence, it can connect private and social spaces quietly. In a commercial building, it can organise high traffic without interrupting the visual calm of the interior.</p>
 
         <figure>
-          <img src="/images/social-elevator-3.png" alt="Glass panoramic elevator at the centre of a double-height residence" loading="lazy" />
+          <img src="/images/social-elevator-3.webp" alt="Glass panoramic elevator at the centre of a double-height residence" loading="lazy" />
           <figcaption>A panoramic elevator can become a transparent architectural centrepiece.</figcaption>
         </figure>
 
@@ -36,7 +36,7 @@ export default function ArticleContentSection() {
         </ul>
 
         <figure>
-          <img src="/images/social-elevator-4.png" alt="Open bronze elevator integrated beside a luxury lounge" loading="lazy" />
+          <img src="/images/social-elevator-4.webp" alt="Open bronze elevator integrated beside a luxury lounge" loading="lazy" />
           <figcaption>Cabin light and surrounding architecture should read as one experience.</figcaption>
         </figure>
 

@@ -37,9 +37,9 @@ export default function HeroSection() {
   return (
     <section id="home" className="home-hero relative h-[100svh] min-h-[680px] w-full overflow-hidden bg-brand-charcoal">
       <picture className={`home-hero__poster absolute inset-0 block size-full transition-opacity duration-1000 ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
-        <source media="(max-width: 767px)" srcSet="/images/hero-mobile-v2.png" />
+        <source media="(max-width: 767px)" srcSet="/images/hero-mobile-v2.webp" />
         <img
-          src="/images/hero-background.png"
+          src="/images/hero-background.webp"
           alt="Glass elevator in a contemporary architectural atrium"
           fetchPriority="high"
           className="size-full object-cover"

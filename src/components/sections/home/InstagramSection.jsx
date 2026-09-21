@@ -1,7 +1,7 @@
 import { LuArrowRight, LuInstagram } from 'react-icons/lu'
 
 const gallery = [
-  ['/images/social-elevator-1.png', 'Bronze home elevator beside a sunlit living room'], ['/images/social-elevator-2.png', 'Open residential elevator beside a reading corner'], ['/images/social-elevator-3.png', 'Panoramic glass elevator in a double-height home'], ['/images/social-elevator-4.png', 'Open bronze elevator beside a luxury lounge'], ['/images/social-elevator-5.png', 'Glass home elevator in a bright penthouse atrium'],
+  ['/images/social-elevator-1.webp', 'Bronze home elevator beside a sunlit living room'], ['/images/social-elevator-2.webp', 'Open residential elevator beside a reading corner'], ['/images/social-elevator-3.webp', 'Panoramic glass elevator in a double-height home'], ['/images/social-elevator-4.webp', 'Open bronze elevator beside a luxury lounge'], ['/images/social-elevator-5.webp', 'Glass home elevator in a bright penthouse atrium'],
 ]
 const Arrow = () => <span aria-hidden="true"><LuArrowRight /></span>
 

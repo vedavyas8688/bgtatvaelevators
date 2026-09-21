@@ -43,7 +43,7 @@ export default function AboutSection() {
       </div>
 
       <figure className="about-image">
-        <img src="/images/cabin-ivory.png" alt="Refined BG Tatva elevator interior" loading="lazy" />
+        <img src="/images/cabin-ivory.webp" alt="Refined BG Tatva elevator interior" loading="lazy" />
       </figure>
     </section>
   )

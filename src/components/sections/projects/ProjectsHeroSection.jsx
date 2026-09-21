@@ -20,7 +20,7 @@ export default function ProjectsHeroSection() {
       </section>
 
       <section className="relative min-h-[720px] overflow-hidden bg-[#0F2B45] max-md:min-h-[620px]">
-        <img src="/images/social-elevator-3.png" alt="Panoramic glass elevator in a contemporary Bengaluru residence" className="absolute inset-0 size-full object-cover" />
+        <img src="/images/social-elevator-3.webp" alt="Panoramic glass elevator in a contemporary Bengaluru residence" className="absolute inset-0 size-full object-cover" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,43,69,.84),rgba(15,43,69,.18)_70%)]" />
         <div className="relative z-10 flex min-h-[720px] max-w-[720px] flex-col justify-end px-[clamp(24px,7vw,110px)] py-[clamp(50px,7vw,100px)] text-white max-md:min-h-[620px]">
           <p className="m-0 text-[11px] font-semibold uppercase tracking-[.2em] text-[#EB9B34]">Featured · Bengaluru residence</p>

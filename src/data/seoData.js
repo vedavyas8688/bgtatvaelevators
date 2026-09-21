@@ -2,7 +2,7 @@ export const siteSeo = {
   siteName: 'BG Tatva Elevators',
   siteUrl: 'https://bgtatva.com',
   locale: 'en_IN',
-  defaultImage: '/images/hero-background.png',
+  defaultImage: '/images/hero-background.webp',
   themeColor: '#0F2B45',
   lastModified: '2026-09-21',
   business: {
@@ -62,7 +62,7 @@ export const seoPages = {
     path: '/blog/elevators-modern-architecture',
     title: 'Elevators in Modern Architecture | BG Tatva Elevators',
     description: 'Learn how thoughtful elevator planning, materials, lighting and long-term performance can strengthen modern architectural spaces.',
-    image: '/images/social-elevator-3.png',
+    image: '/images/social-elevator-3.webp',
     type: 'article',
     priority: 0.7,
     changeFrequency: 'monthly',
