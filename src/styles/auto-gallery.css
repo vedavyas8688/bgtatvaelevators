@@ -112,7 +112,8 @@
   transform: scale(1);
   transform-origin: bottom left;
   box-shadow: 0 14px 34px #0F2B4512;
-  clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+  border-radius: 24px;
+  clip-path: none;
 }
 
 .gallery-slot-small-1 { left: 4.5%; }

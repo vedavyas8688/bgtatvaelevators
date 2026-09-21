@@ -555,7 +555,7 @@
 
   .auto-gallery,
   .gallery-stage {
-    min-height: 760px;
+    min-height: 790px;
   }
 
   .gallery-heading {
@@ -587,7 +587,9 @@
   .gallery-slot-small-2 {
     top: 605px;
     width: calc(50% - 23px);
-    height: 130px;
+    height: 155px;
+    border-radius: 18px;
+    clip-path: none;
   }
 
   .gallery-slot-small-1 { left: 18px; }
