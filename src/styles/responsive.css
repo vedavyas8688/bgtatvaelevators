@@ -555,7 +555,7 @@
 
   .auto-gallery,
   .gallery-stage {
-    min-height: 790px;
+    min-height: 815px;
   }
 
   .gallery-heading {
@@ -585,11 +585,17 @@
 
   .gallery-slot-small-1,
   .gallery-slot-small-2 {
-    top: 605px;
+    top: 602px;
     width: calc(50% - 23px);
-    height: 155px;
-    border-radius: 18px;
+    height: 185px;
+    border-radius: 20px;
     clip-path: none;
+  }
+
+  .gallery-slot-small-1 img,
+  .gallery-slot-small-2 img {
+    object-position: center;
+    transform: none;
   }
 
   .gallery-slot-small-1 { left: 18px; }
@@ -641,25 +647,86 @@
     border-radius: 24px;
   }
 
-  .services-mobile {
-    gap: 58px;
-    padding: 64px 16px 74px;
+  .services-scroll {
+    height: auto;
   }
 
-  .services-mobile img {
-    height: 310px;
-    margin-bottom: 24px;
-    border-radius: 22px;
+  .services-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 300svh;
   }
 
-  .services-mobile h2 {
-    font-size: 38px;
+  .services-copy-stage,
+  .services-image-stage {
+    grid-area: 1 / 1;
+  }
+
+  .services-copy-stage {
+    position: relative;
+    z-index: 2;
+    min-width: 0;
+  }
+
+  .service-copy {
+    width: auto;
+    min-height: 100svh;
+    justify-content: flex-start;
+    margin: 0;
+    padding: calc(44svh + 138px) 20px 52px;
+  }
+
+  .service-copy > span {
+    font-size: 10px;
+  }
+
+  .service-copy h2 {
+    margin-top: 14px;
+    font-size: 39px;
     line-height: 1.02;
   }
 
-  .services-mobile p {
+  .service-copy p {
     margin-top: 18px;
-    line-height: 1.65;
+    font-size: 15px;
+    line-height: 1.62;
+  }
+
+  .service-copy a {
+    min-height: 44px;
+    margin-top: 22px;
+    padding-inline: 18px;
+  }
+
+  .services-image-stage {
+    position: sticky;
+    top: 82px;
+    z-index: 3;
+    align-self: start;
+    width: calc(100% - 28px);
+    height: min(44svh, 370px);
+    min-height: 250px;
+    margin: 14px;
+    border-radius: 24px;
+    background: #F8F7F1;
+    box-shadow: 0 0 0 14px #F8F7F1, 0 14px 34px #0F2B4514;
+    isolation: isolate;
+  }
+
+  .service-image {
+    border-radius: 24px;
+    background: #F8F7F1;
+  }
+
+  .service-image img {
+    right: auto;
+    left: 0;
+    width: 100%;
+    object-position: center;
+  }
+
+  .services-mobile {
+    display: none;
   }
 
   .home-page > section:nth-of-type(5) {

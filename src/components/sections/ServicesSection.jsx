@@ -11,12 +11,12 @@ export default function ServicesSection() {
 
   useEffect(() => {
     const section = sectionRef.current
-    if (!section || window.matchMedia('(max-width: 760px)').matches) return undefined
+    if (!section) return undefined
 
     const update = () => {
       frameRef.current = null
       const rect = section.getBoundingClientRect()
-      const distance = section.offsetHeight - window.innerHeight
+      const distance = Math.max(section.offsetHeight - window.innerHeight, 1)
       setProgress(clamp(-rect.top / distance, 0, 1) * (services.length - 1))
     }
 
