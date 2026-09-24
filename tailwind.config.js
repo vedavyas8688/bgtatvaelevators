@@ -21,8 +21,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Outfit', 'sans-serif'],
-        sans: ['Outfit', 'sans-serif'],
+        display: ['Josefin Sans', 'sans-serif'],
+        sans: ['Josefin Sans', 'sans-serif'],
       },
       letterSpacing: { luxury: '0.22em' },
       backgroundImage: {

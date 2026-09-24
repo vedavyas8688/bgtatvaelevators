@@ -14,7 +14,7 @@ export default function ProjectsHeroSection() {
           </div>
           <div className="max-w-[520px] lg:max-w-[480px] lg:justify-self-end">
             <p className="m-0 text-[17px] leading-[1.7] text-[#0F2B45]">Explore elevators supplied across Bengaluru, shaped around local homes, commercial spaces and the people who use them.</p>
-            <a href="#project-library" className="editorial-cta mt-7">View all projects <span aria-hidden="true"><LuArrowRight /></span></a>
+            <a href="/elevators" className="editorial-cta mt-7">Explore elevator solutions <span aria-hidden="true"><LuArrowRight /></span></a>
           </div>
         </div>
       </section>

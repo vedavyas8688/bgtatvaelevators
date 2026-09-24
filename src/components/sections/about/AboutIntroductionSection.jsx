@@ -1,3 +1,5 @@
+import { LuArrowUpRight } from 'react-icons/lu'
+
 export default function AboutIntroductionSection() {
   return (
     <section id="about-introduction" className="scroll-mt-[104px] bg-white px-[clamp(24px,7vw,110px)] py-[clamp(70px,7vw,110px)] text-[#0F2B45]">
@@ -9,6 +11,9 @@ export default function AboutIntroductionSection() {
             <p className="m-0 text-[16px] leading-[1.75] text-[#0F2B45]">That means planning it with the building—not placing it into whatever space remains. Position, proportion and movement all begin with the architecture.</p>
             <p className="m-0 text-[16px] leading-[1.75] text-[#0F2B45]">It also means balancing visual character with dependable engineering, clear operation and support that continues after handover.</p>
           </div>
+          <a href="/elevators" className="editorial-cta mt-9">
+            Explore our elevators <span aria-hidden="true"><LuArrowUpRight /></span>
+          </a>
         </div>
       </div>
     </section>

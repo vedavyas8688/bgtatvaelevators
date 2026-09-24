@@ -20,7 +20,7 @@
 .site-navbar-logo { display: flex; flex: none; align-items: center; }
 .site-navbar-logo img { width: 174px; height: 58px; object-fit: contain; }
 .site-navbar-links { display: flex; align-items: center; gap: clamp(22px, 2.5vw, 42px); margin: auto; }
-.site-navbar-links a { position: relative; padding: 9px 0; color: #0F2B45; font-size: 13px; font-weight: 500; transition: color .25s; }
+.site-navbar-links a { position: relative; padding: 9px 0; color: #0F2B45; font-size: 15px; font-weight: 500; transition: color .25s; }
 .site-navbar-links a:hover,
 .site-navbar-links a[aria-current='page'] { color: #EB9B34; }
 .site-navbar-links a[aria-current='page']::after { position: absolute; right: 0; bottom: 2px; left: 0; height: 1px; background: #EB9B34; content: ''; }
@@ -118,7 +118,7 @@
     border-bottom: 0;
     border-radius: 0;
     color: #0F2B45;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     opacity: 0;
     transform: translateY(-6px);
@@ -158,7 +158,7 @@
     border-radius: 999px;
     background: #0F2B45;
     color: #FFFFFF;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     box-shadow: inset 0 0 0 1px #FFFFFF18;
     transition: background .25s ease, transform .25s ease;

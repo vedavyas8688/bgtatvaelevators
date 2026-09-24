@@ -4,6 +4,7 @@ import BlogDetail from './pages/BlogDetail'
 import Contact from './pages/Contact'
 import Faq from './pages/Faq'
 import Projects from './pages/Projects'
+import ProjectDetail from './pages/ProjectDetail'
 import Elevators from './pages/Elevators'
 import About from './pages/About'
 import Privacy from './pages/Privacy'
@@ -18,6 +19,7 @@ export default function App() {
   if (path === '/blog/elevators-modern-architecture') page = <BlogDetail />
   else if (path.startsWith('/contact')) page = <Contact />
   else if (path.startsWith('/faq')) page = <Faq />
+  else if (path.startsWith('/projects/')) page = <ProjectDetail slug={path.split('/').filter(Boolean)[1]} />
   else if (path.startsWith('/projects')) page = <Projects />
   else if (path.startsWith('/elevators')) page = <Elevators />
   else if (path.startsWith('/about')) page = <About />

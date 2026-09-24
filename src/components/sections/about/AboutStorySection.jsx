@@ -1,3 +1,5 @@
+import { LuArrowUpRight } from 'react-icons/lu'
+
 export default function AboutStorySection() {
   return (
     <section className="grid bg-[#0F2B45] text-white lg:grid-cols-[1.08fr_.92fr]">
@@ -8,6 +10,9 @@ export default function AboutStorySection() {
         <h2 className="mb-0 mt-10 max-w-[620px] text-[clamp(40px,3.5vw,56px)] font-medium leading-[1.04] tracking-[-.035em] max-sm:mt-8 max-sm:text-[38px]">Experience taught us where attention matters.</h2>
         <p className="mb-0 mt-7 max-w-[620px] text-[16px] leading-[1.8] text-white/70">In the coordination others overlook. In the sound of a closing door. In the light reflected from a control panel. And in being available when the building needs support.</p>
         <div className="mt-9 grid grid-cols-2 gap-8 border-t border-white/15 pt-7"><div><strong className="text-[36px] font-medium">150+</strong><p className="mt-2 text-[12px] text-white/50">Projects completed</p></div><div><strong className="text-[36px] font-medium">120+</strong><p className="mt-2 text-[12px] text-white/50">Spaces transformed</p></div></div>
+        <a href="/projects" className="editorial-cta editorial-cta--light mt-9">
+          View selected projects <span aria-hidden="true"><LuArrowUpRight /></span>
+        </a>
       </div>
     </section>
   )
