@@ -2,9 +2,9 @@ import { LuBuilding2, LuHouse, LuMoveUp, LuRuler, LuSparkles } from 'react-icons
 
 export default function ProjectsApproachSection() {
   const stats = [
-    ['150+', 'Completed projects', LuBuilding2],
-    ['10+', 'Years of experience', LuMoveUp],
-    ['120+', 'Bengaluru spaces transformed', LuSparkles],
+    ['2,700+', 'Lifts delivered', LuBuilding2],
+    ['31+', 'Years of experience', LuMoveUp],
+    ['24/7', 'Customer care', LuSparkles],
   ]
 
   const steps = [

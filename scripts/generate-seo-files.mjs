@@ -1,5 +1,6 @@
 import { writeFile } from 'node:fs/promises'
 import { seoPages, siteSeo } from '../src/data/seoData.js'
+import { projects } from '../src/components/sections/projects/projectsData.js'
 
 const publicFile = (name) => new URL(`../public/${name}`, import.meta.url)
 const escapeXml = (value) => String(value)
@@ -9,7 +10,16 @@ const escapeXml = (value) => String(value)
   .replaceAll('"', '&quot;')
   .replaceAll("'", '&apos;')
 
-const urls = Object.values(seoPages).map((page) => {
+const sitemapPages = [
+  ...Object.values(seoPages),
+  ...projects.map((project) => ({
+    path: `/projects/${project.slug}`,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  })),
+]
+
+const urls = sitemapPages.map((page) => {
   const location = new URL(page.path, `${siteSeo.siteUrl}/`).toString()
 
   return [

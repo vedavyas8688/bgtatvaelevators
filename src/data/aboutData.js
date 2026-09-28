@@ -2,16 +2,16 @@ export const aboutTabs = [
   {
     id: 'history',
     label: 'History',
-    text: 'BG Tatva brings architectural thinking to vertical movement, shaping elevator experiences around enduring materials, careful proportions, and refined everyday comfort.',
+    text: 'With more than 31 years of experience and 2,700+ lifts delivered, BG Tatva combines proven elevator engineering with modern safety, connected controls and responsive service.',
   },
   {
     id: 'mission',
     label: 'Mission',
-    text: 'Our mission is to create elevators that feel considered in every detail—combining purposeful design, dependable movement, and a calm sense of arrival.',
+    text: 'Our mission is to make every journey safer, smoother and easier to manage through dependable engineering, thoughtful design and clear customer care.',
   },
   {
     id: 'vision',
     label: 'Vision',
-    text: 'We envision elevators as an integral part of architecture: spaces that connect people and places while bringing clarity, character, and lasting value to every journey.',
+    text: 'We envision intelligent vertical mobility that protects passengers, supports buildings with useful operating insight and performs reliably for years.',
   },
 ]

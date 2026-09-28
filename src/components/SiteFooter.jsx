@@ -58,7 +58,7 @@ export default function SiteFooter() {
             </div>
             <div>
               <h3>Say Hello</h3>
-              <a href="mailto:info@bgtatva.com">info@bgtatva.com</a>
+            <a href="mailto:info@bgtatva.com">info@bgtatva.com</a>
               <h3>Speak With Us</h3>
               <a href="tel:+919876543210">+91 98765 43210</a>
             </div>

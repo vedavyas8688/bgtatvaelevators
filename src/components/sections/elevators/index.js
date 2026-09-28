@@ -3,3 +3,4 @@ export { default as ElevatorTypeSelectorSection } from './ElevatorTypeSelectorSe
 export { default as ElevatorComparisonSection } from './ElevatorComparisonSection'
 export { default as CabinStylesSection } from './CabinStylesSection'
 export { default as ElevatorSupportSection } from './ElevatorSupportSection'
+export { default as SafetyFeaturesSection } from './SafetyFeaturesSection'

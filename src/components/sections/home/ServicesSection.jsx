@@ -47,6 +47,10 @@ export default function ServicesSection() {
                 <span>Our service</span>
                 <h2>{service.title}</h2>
                 <p>{service.description}</p>
+                <ul className="service-highlights">
+                  {service.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+                </ul>
+                <div className="service-proof"><strong>{service.proof[0]}</strong><span>{service.proof[1]}</span></div>
                 <a className="editorial-cta" href="/elevators#elevator-types">Service detail <b aria-hidden="true"><LuArrowRight /></b></a>
               </article>
             )
@@ -91,6 +95,10 @@ export default function ServicesSection() {
             <span>Our service · 0{index + 1}</span>
             <h2>{service.title}</h2>
             <p>{service.description}</p>
+            <ul className="service-highlights">
+              {service.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+            </ul>
+            <div className="service-proof"><strong>{service.proof[0]}</strong><span>{service.proof[1]}</span></div>
             <a className="editorial-cta" href="/elevators#elevator-types">Service detail <span aria-hidden="true"><LuArrowRight /></span></a>
           </article>
         ))}

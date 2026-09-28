@@ -2,56 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bgtatva.com/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bgtatva.com/about</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bgtatva.com/elevators</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bgtatva.com/projects</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bgtatva.com/faq</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bgtatva.com/blog</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bgtatva.com/blog/elevators-modern-architecture</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bgtatva.com/contact</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bgtatva.com/privacy</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/lakeview-private-residence</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/the-courtyard-house</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/aurelia-business-centre</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/walnut-house-elevator</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/sky-court-villa</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/meridian-grand-lobby</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/heritage-tower-renewal</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/ivory-penthouse</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bgtatva.com/projects/horizon-glass-house</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

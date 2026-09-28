@@ -47,10 +47,62 @@
 .service-copy p,
 .services-mobile p {
   max-width: 610px;
-  margin: 54px 0 0;
+  margin: 30px 0 0;
   color: #0F2B45;
   font-size: 17px;
   line-height: 1.6;
+}
+
+.service-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 22px;
+  max-width: 610px;
+  margin: 28px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid rgba(15,43,69,.18);
+  list-style: none;
+}
+
+.service-highlights li {
+  position: relative;
+  padding-left: 18px;
+  color: #0F2B45;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.service-highlights li::before {
+  position: absolute;
+  top: .52em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #EB9B34;
+  content: '';
+}
+
+.service-proof {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.service-proof strong {
+  color: #0F2B45;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -.03em;
+}
+
+.service-proof span {
+  color: rgba(15,43,69,.68);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
 }
 
 .service-copy a,
@@ -59,7 +111,7 @@
   align-items: center;
   gap: 18px;
   min-height: 48px;
-  margin-top: 30px;
+  margin-top: 24px;
   padding: 0 22px;
   background: #0F2B45;
   color: #F8F7F1;
@@ -113,6 +165,8 @@
   .services-mobile img { order: -1; width: 100%; height: 430px; margin-bottom: 30px; border-radius: 22px; object-fit: cover; }
   .services-mobile h2 { margin-top: 14px; font-size: 42px; }
   .services-mobile p { margin-top: 22px; font-size: 15px; }
+  .services-mobile .service-highlights { grid-template-columns: 1fr; margin-top: 24px; }
+  .services-mobile .service-proof { margin-top: 24px; }
   .services-mobile a { align-self: flex-start; }
 }
 

@@ -3,7 +3,7 @@ import { LuArrowUpRight, LuBuilding2, LuMapPin, LuMoveUp } from 'react-icons/lu'
 
 const signatureProjects = [
   {
-    image: '/images/social-elevator-3.webp',
+    image: '/images/unique/social-elevator-3-ebf4b68e.webp',
     imageAlt: 'Glass panoramic elevator integrated into a Bengaluru residence',
     label: 'Bengaluru residence',
     kicker: 'A project, considered completely',
@@ -19,7 +19,7 @@ const signatureProjects = [
     response: 'A transparent lift core with quiet motion and warm architectural detailing.',
   },
   {
-    image: '/images/elevator-lobby-luxe.webp',
+    image: '/images/unique/elevator-lobby-luxe-97a0e61a.webp',
     imageAlt: 'Premium elevator arrival lobby in a contemporary Bengaluru workplace',
     label: 'Indiranagar workplace',
     kicker: 'Arrival, composed with purpose',
@@ -35,7 +35,7 @@ const signatureProjects = [
     response: 'Warm metal, precise lighting and dependable traffic planning brought clarity to every journey.',
   },
   {
-    image: '/images/walnut-elevator-cabin.webp',
+    image: '/images/unique/walnut-elevator-cabin-784a09b7.webp',
     imageAlt: 'Warm walnut elevator cabin designed for a private Bengaluru home',
     label: 'Jayanagar private home',
     kicker: 'Comfort, carried between floors',

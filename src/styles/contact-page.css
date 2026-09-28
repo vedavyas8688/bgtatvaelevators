@@ -61,6 +61,20 @@
 .project-types button.selected{border-color:#EB9B34;background:#EB9B34;color:#0F2B45}
 .form-submit p{color:rgba(255,255,255,.66)}
 .form-submit p a{color:#EB9B34;text-underline-offset:3px}
+.form-submit p span{color:rgba(255,255,255,.72)}
+
+/* Keep the complete form action area inside the card at every viewport. */
+.contact-inquiry form{box-sizing:border-box;height:auto;overflow:visible}
+.contact-inquiry .form-submit{min-width:0;overflow:visible}
+.contact-inquiry .form-submit>p{display:block;visibility:visible;min-width:0;opacity:1}
+.contact-inquiry .form-submit>button{display:flex;visibility:visible;flex-shrink:0;opacity:1}
+
+@media(max-width:600px){
+  .contact-inquiry form{min-height:max-content;padding-bottom:30px}
+  .contact-inquiry .form-submit{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:18px}
+  .contact-inquiry .form-submit>p{width:100%;max-width:none;margin:0;font-size:12px;line-height:1.65;text-align:left}
+  .contact-inquiry .form-submit>button.editorial-cta{position:static;width:100%;min-height:48px;margin:0;justify-content:center}
+}
 .contact-success h3{color:#fff}
 .contact-success p{color:rgba(255,255,255,.7)}
 .contact-success i{background:#EB9B34;color:#0F2B45}

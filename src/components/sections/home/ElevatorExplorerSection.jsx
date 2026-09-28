@@ -10,10 +10,10 @@ const categories = [
     title: 'An elevator that feels entirely at home.',
     description: 'Quiet, compact and considered around daily life. Our residential elevators bring effortless movement into the architecture without compromising the warmth of your interiors.',
     options: [
-      ['Walnut warmth', '/images/walnut-elevator-cabin.webp'],
-      ['Ivory calm', '/images/cabin-ivory.webp'],
-      ['Modern steel', '/images/cabin-steel.webp'],
-      ['Midnight black', '/images/cabin-black.webp'],
+      ['Walnut warmth', '/images/unique/walnut-elevator-cabin-298012d6.webp'],
+      ['Ivory calm', '/images/unique/cabin-ivory-25f0118e.webp'],
+      ['Modern steel', '/images/unique/cabin-steel-6ec74dd9.webp'],
+      ['Midnight black', '/images/unique/cabin-black-e7a8e2bc.webp'],
     ],
   },
   {
@@ -24,10 +24,10 @@ const categories = [
     title: 'Open the journey to light and space.',
     description: 'Panoramic glass elevators keep interiors visually connected while turning movement into an architectural experience. Ideal for atriums, villas and statement residences.',
     options: [
-      ['Atrium glass', '/images/glass-panoramic-elevator.webp'],
-      ['Double height', '/images/social-elevator-3.webp'],
-      ['Penthouse view', '/images/social-elevator-5.webp'],
-      ['Sunlit living', '/images/social-elevator-1.webp'],
+      ['Atrium glass', '/images/unique/glass-panoramic-elevator-7416396e.webp'],
+      ['Double height', '/images/unique/social-elevator-3-61cdef6e.webp'],
+      ['Penthouse view', '/images/unique/social-elevator-5-7bad3580.webp'],
+      ['Sunlit living', '/images/unique/social-elevator-1-6e7b76a4.webp'],
     ],
   },
   {
@@ -38,10 +38,10 @@ const categories = [
     title: 'Performance with a memorable presence.',
     description: 'Refined systems for offices, hospitality and mixed-use spaces—planned for dependable movement, demanding usage and an arrival experience that reflects the building.',
     options: [
-      ['Signature lobby', '/images/elevator-lobby-luxe.webp'],
-      ['Tailored design', '/images/service-elevator-design.webp'],
-      ['Cabin interiors', '/images/service-cabin-interiors.webp'],
-      ['Premium arrival', '/images/social-elevator-4.webp'],
+      ['Signature lobby', '/images/unique/elevator-lobby-luxe-08f66293.webp'],
+      ['Tailored design', '/images/unique/service-elevator-design-5ab7075c.webp'],
+      ['Cabin interiors', '/images/unique/service-cabin-interiors-7b3af298.webp'],
+      ['Premium arrival', '/images/unique/social-elevator-4-f2e04001.webp'],
     ],
   },
   {
@@ -52,10 +52,10 @@ const categories = [
     title: 'A better experience, without starting over.',
     description: 'Upgrade performance, safety, controls, lighting and finishes with a carefully phased modernisation plan shaped around your existing elevator and building.',
     options: [
-      ['Complete renewal', '/images/service-modernisation.webp'],
-      ['Cabin refresh', '/images/elevator-cabin-base.webp'],
-      ['Door upgrade', '/images/social-elevator-2.webp'],
-      ['Lighting upgrade', '/images/cabin-walnut.webp'],
+      ['Complete renewal', '/images/unique/service-modernisation-c9797d23.webp'],
+      ['Cabin refresh', '/images/unique/elevator-cabin-base-86ebeaf1.webp'],
+      ['Door upgrade', '/images/unique/social-elevator-2-1ef0ccd3.webp'],
+      ['Lighting upgrade', '/images/unique/cabin-walnut-a9da5395.webp'],
     ],
   },
 ]

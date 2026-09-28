@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 import { seoPages, siteSeo } from '../data/seoData'
+import { faqs } from '../data/faqData'
+import { getProjectBySlug } from './sections/projects/projectsData'
 
 function setMeta(selector, attributes) {
   let element = document.head.querySelector(selector)
@@ -14,7 +16,18 @@ function setMeta(selector, attributes) {
 
 export default function SeoMetadata({ pageKey }) {
   useEffect(() => {
-    const page = seoPages[pageKey] || seoPages.home
+    let page = seoPages[pageKey] || seoPages.home
+    const projectMatch = window.location.pathname.match(/^\/projects\/([^/]+)\/?$/)
+    if (projectMatch) {
+      const project = getProjectBySlug(projectMatch[1])
+      if (project) page = {
+        ...seoPages.projects,
+        path: `/projects/${project.slug}`,
+        title: `${project.title} Elevator Project | BG Tatva`,
+        description: `${project.brief} Explore the ${project.type.toLowerCase()} elevator solution by BG Tatva Elevators in ${project.location}.`,
+        image: project.image,
+      }
+    }
     const canonicalUrl = new URL(page.path, siteSeo.siteUrl).toString()
     const imageUrl = new URL(page.image || siteSeo.defaultImage, siteSeo.siteUrl).toString()
 
@@ -51,7 +64,7 @@ export default function SeoMetadata({ pageKey }) {
       schema.type = 'application/ld+json'
       document.head.appendChild(schema)
     }
-    schema.textContent = JSON.stringify({
+    const localBusinessSchema = {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: siteSeo.business.name,
@@ -65,7 +78,19 @@ export default function SeoMetadata({ pageKey }) {
         addressRegion: siteSeo.business.region,
         addressCountry: siteSeo.business.country,
       },
-    })
+      areaServed: { '@type': 'City', name: 'Bengaluru' },
+      knowsAbout: ['Home elevators', 'Commercial elevators', 'Goods lifts', 'Panoramic elevators', 'Elevator modernisation', 'Elevator safety systems', 'IoT lift monitoring'],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Elevator solutions',
+        itemListElement: ['Home elevators', 'Panoramic elevators', 'Commercial elevators', 'Goods lifts', 'Elevator modernisation'].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } })),
+      },
+    }
+    const schemas = [localBusinessSchema]
+    if (pageKey === 'faq') {
+      schemas.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) })
+    }
+    schema.textContent = JSON.stringify(schemas)
   }, [pageKey])
 
   return null

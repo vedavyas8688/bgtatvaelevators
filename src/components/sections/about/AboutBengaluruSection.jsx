@@ -51,7 +51,7 @@ export default function AboutBengaluruSection() {
 
       <figure className="m-0 h-[380px] overflow-hidden sm:h-[500px] lg:h-[620px] xl:h-auto xl:min-h-[720px]">
         <img
-          src="/images/glass-panoramic-elevator.webp"
+          src="/images/unique/glass-panoramic-elevator-1d49a9d1.webp"
           alt="Panoramic elevator supplied in Bengaluru"
           loading="lazy"
           className="size-full object-cover"

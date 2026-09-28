@@ -62,11 +62,11 @@ export default function HeroSection() {
       <div className="home-hero__content absolute left-[5.7%] top-[29.5%] z-10">
         <div className="max-w-[560px]">
           <h1 className="font-display text-[clamp(4.2rem,5.7vw,6rem)] font-medium leading-[.87] tracking-[-.035em] text-brand-white">
-            <span className="block">An</span>
-            <span className="block py-[.1em] text-brand-gold">elevated</span>
-            <span className="block whitespace-nowrap">way of life.</span>
+            <span className="block">31+ years</span>
+            <span className="block py-[.1em] text-brand-gold">of trusted</span>
+            <span className="block whitespace-nowrap">vertical mobility.</span>
           </h1>
-          <p className="mt-8 max-w-[330px] text-[17px] leading-[1.45] text-brand-white/80">More than movement —<br />an experience that inspires<br />every day.</p>
+          <p className="mt-8 max-w-[390px] text-[17px] leading-[1.55] text-brand-white/80">2,700+ lifts delivered with safety-led engineering, smart controls and dependable service.</p>
           <div className="home-hero__actions mt-9 flex flex-wrap items-center gap-x-8 gap-y-5 text-brand-white">
             <button type="button" className="group flex items-center gap-4" onClick={toggleVideo} aria-pressed={isPlaying}>
               <span className="home-hero__play-icon grid size-[60px] shrink-0 place-items-center rounded-full border border-brand-gold text-brand-white transition-colors duration-300 group-hover:bg-brand-gold group-hover:text-brand-blue">
@@ -74,7 +74,7 @@ export default function HeroSection() {
               </span>
               <span className="text-[16px]">{isPlaying ? 'Pause Video' : 'Play Video'}</span>
             </button>
-            <a href="/contact" className="home-hero__contact group inline-flex min-h-[50px] items-center gap-3 rounded-full border border-brand-gold bg-brand-gold px-6 py-3 text-[15px] font-semibold text-brand-blue shadow-[0_10px_28px_rgba(15,43,69,.16)] transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-blue hover:bg-brand-blue hover:text-brand-white hover:shadow-[0_14px_34px_rgba(15,43,69,.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold">
+            <a href="/contact" className="home-hero__contact group inline-flex min-h-[50px] items-center gap-3 rounded-full border border-brand-gold bg-brand-gold px-6 py-3 text-[15px] font-semibold text-brand-blue shadow-[0_10px_28px_rgba(15,43,69,.16)] transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-white hover:bg-brand-white hover:text-brand-blue hover:shadow-[0_14px_34px_rgba(15,43,69,.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold">
               <span>Contact Us</span>
               <LuArrowUpRight className="size-5 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" aria-hidden="true" />
             </a>
