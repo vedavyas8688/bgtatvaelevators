@@ -201,7 +201,9 @@ button:hover > span[aria-hidden="true"] > svg {
   color: #0f2b45;
   font: inherit;
   font-size: 14px;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .contact-modal input {
   height: 52px;
@@ -267,10 +269,15 @@ button:hover > span[aria-hidden="true"] > svg {
   line-height: 1.6;
 }
 @keyframes contact-modal-fade {
-  from { opacity: 0; }
+  from {
+    opacity: 0;
+  }
 }
 @keyframes contact-modal-enter {
-  from { opacity: 0; transform: translateY(24px) scale(0.98); }
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
 }
 @media (max-width: 600px) {
   .contact-modal {

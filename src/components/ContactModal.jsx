@@ -102,45 +102,86 @@ export default function ContactModal() {
 
         {submitted ? (
           <div className="contact-modal__success" aria-live="polite">
-            <span><LuCheck aria-hidden="true" /></span>
+            <span>
+              <LuCheck aria-hidden="true" />
+            </span>
             <h2 id="contact-modal-title">Thank you.</h2>
-            <p>Your message is ready for our team. We&apos;ll be in touch shortly.</p>
-            <button type="button" onClick={closeModal}>Close</button>
+            <p>
+              Your message is ready for our team. We&apos;ll be in touch
+              shortly.
+            </p>
+            <button type="button" onClick={closeModal}>
+              Close
+            </button>
           </div>
         ) : (
           <>
             <header>
               <p>Start a conversation</p>
               <h2 id="contact-modal-title">Get in touch</h2>
-              <span>Share a few details and our Bengaluru team will contact you.</span>
+              <span>
+                Share a few details and our Bengaluru team will contact you.
+              </span>
             </header>
-            <form onSubmit={(event) => { event.preventDefault(); setSubmitted(true); }}>
+            <form
+              onSubmit={(event) => {
+                event.preventDefault();
+                setSubmitted(true);
+              }}
+            >
               <div className="contact-modal__row">
                 <label>
                   <span>Your name</span>
-                  <input ref={firstInputRef} name="name" autoComplete="name" required placeholder="Full name" />
+                  <input
+                    ref={firstInputRef}
+                    name="name"
+                    autoComplete="name"
+                    required
+                    placeholder="Full name"
+                  />
                 </label>
                 <label>
                   <span>Email address</span>
-                  <input name="email" type="email" autoComplete="email" required placeholder="name@example.com" />
+                  <input
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    required
+                    placeholder="name@example.com"
+                  />
                 </label>
               </div>
               <div className="contact-modal__row">
                 <label>
                   <span>Phone number</span>
-                  <input name="phone" type="tel" autoComplete="tel" placeholder="+91" />
+                  <input
+                    name="phone"
+                    type="tel"
+                    autoComplete="tel"
+                    placeholder="+91"
+                  />
                 </label>
                 <label>
                   <span>Location</span>
-                  <input name="location" autoComplete="address-level2" placeholder="City, State" />
+                  <input
+                    name="location"
+                    autoComplete="address-level2"
+                    placeholder="City, State"
+                  />
                 </label>
               </div>
               <label>
                 <span>How can we help?</span>
-                <textarea name="message" required placeholder="Tell us about your building, project stage or requirement." />
+                <textarea
+                  name="message"
+                  required
+                  placeholder="Tell us about your building, project stage or requirement."
+                />
               </label>
               <div className="contact-modal__actions">
-                <small>We&apos;ll only use these details to respond to your inquiry.</small>
+                <small>
+                  We&apos;ll only use these details to respond to your inquiry.
+                </small>
                 <button type="submit">
                   Send inquiry <LuArrowRight aria-hidden="true" />
                 </button>

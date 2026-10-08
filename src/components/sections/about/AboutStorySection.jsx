@@ -49,7 +49,11 @@ function TravellingNumber({ value, suffix = "+", className = "" }) {
   }, [value]);
 
   return (
-    <span ref={numberRef} className={className} aria-label={`${value}${suffix}`}>
+    <span
+      ref={numberRef}
+      className={className}
+      aria-label={`${value}${suffix}`}
+    >
       <span aria-hidden="true">
         {displayValue.toLocaleString("en-IN")}
         {suffix}

@@ -21,9 +21,7 @@ export default function AboutCtaSection() {
         </header>
 
         <div className="relative mt-8 sm:mt-[clamp(42px,5vw,72px)]">
-          <figure
-            className="relative m-0 aspect-[1.512/1] min-h-0 overflow-hidden rounded-[22px] border border-[#0F2B45]/10 bg-[#091F33] sm:aspect-auto sm:min-h-[clamp(430px,52vw,690px)] sm:rounded-[clamp(24px,3vw,38px)]"
-          >
+          <figure className="relative m-0 aspect-[1.512/1] min-h-0 overflow-hidden rounded-[22px] border border-[#0F2B45]/10 bg-[#091F33] sm:aspect-auto sm:min-h-[clamp(430px,52vw,690px)] sm:rounded-[clamp(24px,3vw,38px)]">
             <img
               src="/images/unique/social-elevator-5-9dc5af6b.webp"
               alt="Panoramic glass elevator designed as part of a refined Bengaluru interior"
