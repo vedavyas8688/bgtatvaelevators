@@ -1,6 +1,6 @@
-import SiteNavbar from '../components/SiteNavbar'
-import SiteFooter from '../components/SiteFooter'
-import { PrivacyContentSection } from '../components/sections/privacy'
+import SiteNavbar from "../components/SiteNavbar";
+import SiteFooter from "../components/SiteFooter";
+import { PrivacyContentSection } from "../components/sections/privacy";
 
 export default function Privacy() {
   return (
@@ -9,5 +9,5 @@ export default function Privacy() {
       <PrivacyContentSection />
       <SiteFooter />
     </main>
-  )
+  );
 }

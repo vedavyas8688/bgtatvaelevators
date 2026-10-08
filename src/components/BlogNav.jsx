@@ -1,5 +1,5 @@
-import SiteNavbar from './SiteNavbar'
+import SiteNavbar from "./SiteNavbar";
 
 export default function BlogNav() {
-  return <SiteNavbar />
+  return <SiteNavbar />;
 }

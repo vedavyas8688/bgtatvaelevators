@@ -1,5 +1,5 @@
-import SiteNavbar from '../components/SiteNavbar'
-import SiteFooter from '../components/SiteFooter'
+import SiteNavbar from "../components/SiteNavbar";
+import SiteFooter from "../components/SiteFooter";
 import {
   ContactDirectSection,
   ContactFaqSection,
@@ -8,7 +8,7 @@ import {
   ContactInquirySection,
   ContactProcessSection,
   ContactVisitSection,
-} from '../components/sections/contact'
+} from "../components/sections/contact";
 
 export default function Contact() {
   return (
@@ -23,5 +23,5 @@ export default function Contact() {
       <ContactFinalSection />
       <SiteFooter />
     </main>
-  )
+  );
 }

@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import { aboutTabs } from '../../../data/aboutData'
-import { LuArrowRight } from 'react-icons/lu'
+import { useState } from "react";
+import { aboutTabs } from "../../../data/aboutData";
+import { LuArrowRight } from "react-icons/lu";
 
 export default function AboutSection() {
-  const [activeTab, setActiveTab] = useState('history')
-  const activeContent = aboutTabs.find((tab) => tab.id === activeTab)
+  const [activeTab, setActiveTab] = useState("history");
+  const activeContent = aboutTabs.find((tab) => tab.id === activeTab);
 
   return (
     <section id="about" className="about-section" aria-labelledby="about-title">
-      <p className="about-vertical" id="about-title">About</p>
+      <p className="about-vertical" id="about-title">
+        About
+      </p>
 
       <div className="about-panel">
         <div className="about-tabs" role="tablist" aria-label="About BG Tatva">
@@ -26,16 +28,42 @@ export default function AboutSection() {
           ))}
         </div>
 
-        <p id="about-copy" role="tabpanel" className="about-copy" key={activeTab}>
+        <p
+          id="about-copy"
+          role="tabpanel"
+          className="about-copy"
+          key={activeTab}
+        >
           {activeContent.text}
         </p>
 
-        <a className="about-action" href="/about" aria-label="Discover more about BG Tatva">
+        <a
+          className="about-action"
+          href="/about"
+          aria-label="Discover more about BG Tatva"
+        >
           <svg viewBox="0 0 120 120" aria-hidden="true">
-            <defs><path id="about-circle" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0" /></defs>
+            <defs>
+              <path
+                id="about-circle"
+                d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"
+              />
+            </defs>
             <text>
-              <textPath href="#about-circle" startOffset="25%" textAnchor="middle">MORE ABOUT US</textPath>
-              <textPath href="#about-circle" startOffset="75%" textAnchor="middle">MORE ABOUT US</textPath>
+              <textPath
+                href="#about-circle"
+                startOffset="25%"
+                textAnchor="middle"
+              >
+                MORE ABOUT US
+              </textPath>
+              <textPath
+                href="#about-circle"
+                startOffset="75%"
+                textAnchor="middle"
+              >
+                MORE ABOUT US
+              </textPath>
             </text>
           </svg>
           <LuArrowRight className="about-action-arrow" aria-hidden="true" />
@@ -43,8 +71,12 @@ export default function AboutSection() {
       </div>
 
       <figure className="about-image">
-        <img src="/images/unique/cabin-ivory-1a22eed8.webp" alt="Refined BG Tatva elevator interior" loading="lazy" />
+        <img
+          src="/images/unique/cabin-ivory-1a22eed8.webp"
+          alt="Refined BG Tatva elevator interior"
+          loading="lazy"
+        />
       </figure>
     </section>
-  )
+  );
 }

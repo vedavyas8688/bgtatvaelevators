@@ -1,1 +1,1 @@
-export { default as PrivacyContentSection } from './PrivacyContentSection'
+export { default as PrivacyContentSection } from "./PrivacyContentSection";

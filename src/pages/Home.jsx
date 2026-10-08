@@ -1,4 +1,4 @@
-import SiteFooter from '../components/SiteFooter'
+import SiteFooter from "../components/SiteFooter";
 import {
   AboutSection,
   ArchitectResourcesSection,
@@ -12,7 +12,7 @@ import {
   ModernisationCompareSection,
   ServicesSection,
   SignatureProjectSection,
-} from '../components/sections/home'
+} from "../components/sections/home";
 
 export default function Home() {
   return (
@@ -31,5 +31,5 @@ export default function Home() {
       <InstagramSection />
       <SiteFooter />
     </main>
-  )
+  );
 }

@@ -1,43 +1,52 @@
-import { useRef, useState } from 'react'
-import { LuArrowUpRight, LuPause, LuPlay } from 'react-icons/lu'
-import SiteNavbar from '../../SiteNavbar'
+import { useRef, useState } from "react";
+import { LuArrowUpRight, LuPause, LuPlay } from "react-icons/lu";
+import SiteNavbar from "../../SiteNavbar";
 
 export default function HeroSection() {
-  const videoRef = useRef(null)
-  const [isPlaying, setIsPlaying] = useState(false)
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const toggleVideo = async () => {
-    const video = videoRef.current
-    if (!video) return
+    const video = videoRef.current;
+    if (!video) return;
 
     if (video.paused) {
       try {
-        await video.play()
-        setIsPlaying(true)
+        await video.play();
+        setIsPlaying(true);
       } catch {
-        setIsPlaying(false)
+        setIsPlaying(false);
       }
-      return
+      return;
     }
 
-    video.pause()
-    setIsPlaying(false)
-  }
+    video.pause();
+    setIsPlaying(false);
+  };
 
   const loopBeforeOutro = () => {
-    const video = videoRef.current
-    if (!video || !Number.isFinite(video.duration)) return
+    const video = videoRef.current;
+    if (!video || !Number.isFinite(video.duration)) return;
 
     if (video.currentTime >= video.duration - 3) {
-      video.currentTime = 0
-      void video.play()
+      video.currentTime = 0;
+      void video.play();
     }
-  }
+  };
 
   return (
-    <section id="home" className="home-hero relative h-[100svh] min-h-[680px] w-full overflow-hidden bg-brand-charcoal">
-      <picture className={`home-hero__poster absolute inset-0 block size-full transition-opacity duration-1000 ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
-        <source media="(max-width: 767px)" srcSet="/images/hero-mobile-v2.webp" />
+    <section
+      id="home"
+      className="home-hero relative h-[100svh] min-h-[680px] w-full overflow-hidden bg-brand-charcoal"
+    >
+      <picture
+        className={`home-hero__poster absolute inset-0 block size-full transition-opacity duration-1000 ${isPlaying ? "opacity-0" : "opacity-100"}`}
+      >
+        <source
+          media="(max-width: 767px)"
+          srcSet="/images/hero-mobile-v3.png"
+        />
+        <source media="(max-width: 1023px)" srcSet="/images/hero-tablet.png" />
         <img
           src="/images/hero-background.webp"
           alt="Glass elevator in a contemporary architectural atrium"
@@ -47,7 +56,7 @@ export default function HeroSection() {
       </picture>
       <video
         ref={videoRef}
-        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${isPlaying ? 'opacity-100' : 'opacity-0'}`}
+        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${isPlaying ? "opacity-100" : "opacity-0"}`}
         src="/videos/elevator-hero.mp4"
         muted
         playsInline
@@ -66,25 +75,48 @@ export default function HeroSection() {
             <span className="block py-[.1em] text-brand-gold">of trusted</span>
             <span className="block whitespace-nowrap">vertical mobility.</span>
           </h1>
-          <p className="mt-8 max-w-[390px] text-[17px] leading-[1.55] text-brand-white/80">2,700+ lifts delivered with safety-led engineering, smart controls and dependable service.</p>
+          <p className="mt-8 max-w-[390px] text-[17px] leading-[1.55] text-brand-white/80">
+            2,700+ lifts delivered with safety-led engineering, smart controls
+            and dependable service.
+          </p>
           <div className="home-hero__actions mt-9 flex flex-wrap items-center gap-x-8 gap-y-5 text-brand-white">
-            <button type="button" className="group flex items-center gap-4" onClick={toggleVideo} aria-pressed={isPlaying}>
+            <button
+              type="button"
+              className="group flex items-center gap-4"
+              onClick={toggleVideo}
+              aria-pressed={isPlaying}
+            >
               <span className="home-hero__play-icon grid size-[60px] shrink-0 place-items-center rounded-full border border-brand-gold text-brand-white transition-colors duration-300 group-hover:bg-brand-gold group-hover:text-brand-blue">
-                {isPlaying ? <LuPause className="size-5" aria-hidden="true" /> : <LuPlay className="ml-1 size-5" aria-hidden="true" />}
+                {isPlaying ? (
+                  <LuPause className="size-5" aria-hidden="true" />
+                ) : (
+                  <LuPlay className="ml-1 size-5" aria-hidden="true" />
+                )}
               </span>
-              <span className="text-[16px]">{isPlaying ? 'Pause Video' : 'Play Video'}</span>
+              <span className="text-[16px]">
+                {isPlaying ? "Pause Video" : "Play Video"}
+              </span>
             </button>
-            <a href="/contact" className="home-hero__contact group inline-flex min-h-[50px] items-center gap-3 rounded-full border border-brand-gold bg-brand-gold px-6 py-3 text-[15px] font-semibold text-brand-blue shadow-[0_10px_28px_rgba(15,43,69,.16)] transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-white hover:bg-brand-white hover:text-brand-blue hover:shadow-[0_14px_34px_rgba(15,43,69,.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold">
+            <a
+              href="/contact"
+              className="home-hero__contact group inline-flex min-h-[50px] items-center gap-3 rounded-full border border-brand-gold bg-brand-gold px-6 py-3 text-[15px] font-semibold text-brand-blue shadow-[0_10px_28px_rgba(15,43,69,.16)] transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-white hover:bg-brand-white hover:text-brand-blue hover:shadow-[0_14px_34px_rgba(15,43,69,.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold"
+            >
               <span>Contact Us</span>
-              <LuArrowUpRight className="size-5 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" aria-hidden="true" />
+              <LuArrowUpRight
+                className="size-5 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+                aria-hidden="true"
+              />
             </a>
           </div>
         </div>
       </div>
 
-      <div className="home-hero__baseline absolute inset-x-[5.7%] bottom-0 z-10 h-px bg-brand-white/35" aria-hidden="true">
+      <div
+        className="home-hero__baseline absolute inset-x-[5.7%] bottom-0 z-10 h-px bg-brand-white/35"
+        aria-hidden="true"
+      >
         <span className="block h-px w-[28%] bg-brand-gold" />
       </div>
     </section>
-  )
+  );
 }

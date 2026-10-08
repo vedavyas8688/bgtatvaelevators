@@ -1,8 +1,11 @@
-import { cabinStyles } from './elevatorsData'
+import { cabinStyles } from "./elevatorsData";
 
 export default function CabinStylesSection() {
   return (
-    <section id="cabin-design" className="scroll-mt-[104px] bg-[#0F2B45] px-4 py-16 text-white sm:px-[clamp(20px,5vw,76px)] sm:py-[clamp(85px,9vw,140px)]">
+    <section
+      id="cabin-design"
+      className="scroll-mt-[104px] bg-[#0F2B45] px-4 py-16 text-white sm:px-[clamp(20px,5vw,76px)] sm:py-[clamp(85px,9vw,140px)]"
+    >
       <header className="mx-auto max-w-[800px] text-center">
         <p className="m-0 text-[10px] font-semibold uppercase tracking-[.2em] text-[#EB9B34] sm:text-[11px]">
           Cabin design
@@ -13,7 +16,8 @@ export default function CabinStylesSection() {
           feel like it belongs.
         </h2>
         <p className="mx-auto mb-0 mt-5 max-w-[650px] text-[13px] leading-[1.65] text-white/70 sm:mt-6 sm:text-[16px] sm:leading-[1.7]">
-          Materials, lighting, controls and proportions come together to create a cabin with its own quiet character.
+          Materials, lighting, controls and proportions come together to create
+          a cabin with its own quiet character.
         </p>
       </header>
 
@@ -28,11 +32,15 @@ export default function CabinStylesSection() {
                 className="size-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </figure>
-            <h3 className="mb-0 mt-3 text-[16px] font-medium leading-tight sm:mt-5 sm:text-[23px]">{title}</h3>
-            <p className="mb-0 mt-1.5 text-[11px] leading-[1.5] text-white/65 sm:mt-2 sm:text-[14px] sm:leading-[1.6]">{copy}</p>
+            <h3 className="mb-0 mt-3 text-[16px] font-medium leading-tight sm:mt-5 sm:text-[23px]">
+              {title}
+            </h3>
+            <p className="mb-0 mt-1.5 text-[11px] leading-[1.5] text-white/65 sm:mt-2 sm:text-[14px] sm:leading-[1.6]">
+              {copy}
+            </p>
           </article>
         ))}
       </div>
     </section>
-  )
+  );
 }
